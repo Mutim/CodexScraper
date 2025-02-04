@@ -8,8 +8,8 @@ WELCOME_TEXT = f"""
 
 Ashes Codex data grabber.
 
-[1] Initialize Database     - Set up the storage system
-[2] Scrape                  - Extract data from sources
+[1] Scrape                  - Extract data from sources
+[2] Initialize Database     - Set up the storage system
 [3] Help                    - Get usage instructions
 [4] Exit                    - Quit the application
 
