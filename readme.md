@@ -1,6 +1,6 @@
 # CodexScraper
 
-CodexScraper is a Python-based tool designed for scraping and managing data efficiently.  
+CodexScraper is a tool used to access the data from [AshesCodex](https://ashescodex.com/)  
 
 ## 🔧 Requirements  
 - **Tested Python Version**: Python **>= 3.9** (other versions may work but are not officially tested).  
