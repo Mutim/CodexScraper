@@ -8,7 +8,7 @@ CodexScraper is a tool used to access the data from [AshesCodex](https://ashesco
 ## 📥 Installation  
 1. **Clone the repository**  
    ```sh
-   git clone https://github.com/yourusername/CodexScraper.git
+   git clone https://github.com/mutim/CodexScraper.git
    cd CodexScraper
 
 2. **Create and activate a virtual environment**
@@ -22,6 +22,7 @@ CodexScraper is a tool used to access the data from [AshesCodex](https://ashesco
 3. **Install dependencies**
     ```sh
    pip install -r requirements.txt
+
 
 ## ❓ Support
 - Issues: If you encounter any problems, please open a ticket in the Issues section.
