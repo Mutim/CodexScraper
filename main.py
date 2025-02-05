@@ -152,7 +152,7 @@ def retry_upsert(entries, section, page):
                 print(f"\033[0;33mError 21000: ON CONFLICT DO UPDATE command cannot affect row a second time. Skipping entry.")
                 return False
             elif error_code == "23502":  # ON CONFLICT DO UPDATE affecting row twice
-                print(f"\033[0;33mError 23502: Missing GUID in entry. Skipping entry.")
+                print(f"\033[0;33mError 23502: Missing GUID in entry. Skipping entry.\033[0m")
                 return False
             else:
                 print(f"\033[0;33mUnexpected API error while upsert section `{section}` on page {page}:\033[0m\n{e}")
