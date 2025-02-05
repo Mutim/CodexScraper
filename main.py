@@ -149,7 +149,7 @@ def retry_upsert(entries, section, page):
                     f"Object is too large...")
                 return False
             elif error_code == "21000":  # ON CONFLICT DO UPDATE affecting row twice
-                print(f"\033[0;33mError 21000: ON CONFLICT DO UPDATE command cannot affect row a second time. Skipping entry.")
+                print(f"\033[0;33mError 21000: ON CONFLICT DO UPDATE command cannot affect row a second time. Skipping entry.\033[0m")
                 return False
             elif error_code == "23502":  # ON CONFLICT DO UPDATE affecting row twice
                 print(f"\033[0;33mError 23502: Missing GUID in entry. Skipping entry.\033[0m")
