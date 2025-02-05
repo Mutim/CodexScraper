@@ -1,0 +1,1611 @@
+{
+  "data": [
+    {
+      "itemName": "2nd Sword Division's Belt",
+      "description": "Waist armor worn by the 2nd Sword Division, the first Kaelar expeditionary unit to step through the Divine Portal to arrive at Lionhold.",
+      "defaultQuality": 1,
+      "level": 5,
+      "grade": "NG",
+      "displayRequiredLevel": true,
+      "requiredProfessionId": {
+        "guid": "0",
+        "typeId": "8125613373123",
+        "name": "None"
+      },
+      "requiredCertificationLevelId": {
+        "guid": "0",
+        "typeId": "455189666431",
+        "name": "None"
+      },
+      "displayRequiredCert": false,
+      "subType": "None",
+      "isPlayerCommodity": false,
+      "itemNamePerRarityOverride": {},
+      "rarityMin": "Common",
+      "rarityMax": "Legendary",
+      "statBlockId": {
+        "guid": "6064630605317603355",
+        "typeId": "10911100031237784",
+        "name": "None"
+      },
+      "displayIcon": "/Game/UI/Icons/Items/Gear/Armor/Heavy/Waist/TUI_Icon_Gear_Armor_Heavy_Waist_2ndSword.TUI_Icon_Gear_Armor_Heavy_Waist_2ndSword",
+      "resourceDisplayIcon": "None",
+      "canEquip": true,
+      "hideEquipAppearance": false,
+      "equipSlots": [
+        "Belt"
+      ],
+      "setBonusIds": [
+        {
+          "guid": "6064632299839554424",
+          "typeId": "51949899",
+          "name": "None"
+        }
+      ],
+      "physicalMaterial": "None",
+      "inventoryFilterType": "Armor",
+      "questItemSignificance": "Minor",
+      "treasureHuntId": {
+        "guid": "0",
+        "typeId": "296519874",
+        "name": "None"
+      },
+      "gameplayTags": {
+        "gameplayTags": [
+          {
+            "tagName": "Item.Gear.Armor.Heavy"
+          },
+          {
+            "tagName": "Slot.Waist"
+          }
+        ],
+        "parentTags": [
+          {
+            "tagName": "Item.Gear.Armor"
+          },
+          {
+            "tagName": "Item.Gear"
+          },
+          {
+            "tagName": "item"
+          },
+          {
+            "tagName": "Slot"
+          }
+        ]
+      },
+      "itemTypeTags": {
+        "gameplayTags": [
+          {
+            "tagName": "Item.Gear.Armor.Heavy"
+          },
+          {
+            "tagName": "Slot.Waist"
+          }
+        ],
+        "parentTags": [
+          {
+            "tagName": "Item.Gear.Armor"
+          },
+          {
+            "tagName": "Item.Gear"
+          },
+          {
+            "tagName": "item"
+          },
+          {
+            "tagName": "Slot"
+          }
+        ]
+      },
+      "certificationTag": {
+        "tagName": "None"
+      },
+      "professionTag": {
+        "tagName": "None"
+      },
+      "baseVendorValueId": {
+        "guid": "6064632280835031041",
+        "typeId": "3145314713",
+        "name": "None"
+      },
+      "inventoryDimension": {
+        "x": 1,
+        "y": 1
+      },
+      "maxStackSize": 1,
+      "bMaxStackSizeAffectedByStats": false,
+      "occupiesAllEquipSlots": false,
+      "expirationPeriod": 0,
+      "expirationAction": 0,
+      "attackAbilityId": {
+        "guid": "0",
+        "typeId": "30316001",
+        "name": "None"
+      },
+      "relevantTierId": {
+        "guid": "0",
+        "typeId": "1011111289",
+        "name": "None"
+      },
+      "activationArchetypeId": {
+        "guid": "107167438427770",
+        "typeId": "1091110014",
+        "name": "None"
+      },
+      "activationCastId": {
+        "guid": "0",
+        "typeId": "30316001",
+        "name": "None"
+      },
+      "activationActionsIds": [],
+      "learnableRecipeIds": [],
+      "fuelValue": 0,
+      "tradeable": true,
+      "vendorable": true,
+      "appearanceId": {
+        "guid": "6064628793932775729",
+        "typeId": "1091110020",
+        "name": "None"
+      },
+      "resourceBagDefId": {
+        "guid": "0",
+        "typeId": "1091220022",
+        "name": "None"
+      },
+      "gatheringToolDataId": {
+        "guid": "0",
+        "typeId": "19835",
+        "name": "None"
+      },
+      "enchantmentScrollDefId": {
+        "guid": "0",
+        "typeId": "10912131337",
+        "name": "None"
+      },
+      "enchantmentCharmDefId": {
+        "guid": "0",
+        "typeId": "10912121337",
+        "name": "None"
+      },
+      "enchantmentDefId": {
+        "guid": "6064631986592481298",
+        "typeId": "10912151337",
+        "name": "None"
+      },
+      "enchantmentVFXDefIds": [],
+      "enchantmentVFXMesh": "None",
+      "weaponSkillLineId": {
+        "guid": "0",
+        "typeId": "455189666500",
+        "name": "None"
+      },
+      "qualityCurveId": {
+        "guid": "109166871729784",
+        "typeId": "1091110011010111",
+        "name": "None"
+      },
+      "economicRegionId": {
+        "guid": "0",
+        "typeId": "9127326",
+        "name": "None"
+      },
+      "packedCrateId": {
+        "guid": "0",
+        "typeId": "1091110003",
+        "name": "None"
+      },
+      "crateId": {
+        "guid": "0",
+        "typeId": "1091110046",
+        "name": "None"
+      },
+      "caravanComponentId": {
+        "guid": "0",
+        "typeId": "1012298003",
+        "name": "None"
+      },
+      "cargoLootTableId": {
+        "guid": "0",
+        "typeId": "1091110040",
+        "name": "None"
+      },
+      "imageToShow": "None",
+      "summonNotifyClassPath": "None",
+      "mountSelfReviveCooldown": {
+        "expression": ""
+      },
+      "guid": "6064628793932775728",
+      "name": "Gear_Armor_Heavy_2ndSwordDivision_Waist",
+      "typeId": "1091110003",
+      "statBlock": {
+        "stats": {
+          "109183607068294": {
+            "commonMin": 5,
+            "commonMax": 6,
+            "uncommonMin": 6,
+            "uncommonMax": 6,
+            "rareMin": 6,
+            "rareMax": 6,
+            "heroicMin": 6,
+            "heroicMax": 7,
+            "epicMin": 7,
+            "epicMax": 7,
+            "legendaryMin": 7,
+            "legendaryMax": 8,
+            "artifactMin": 0,
+            "artifactMax": 0,
+            "statTypeDef": {
+              "displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"066C1E554B3F071FCE1EE6B949A51976\", \"Armor\")",
+              "description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"B7AC245C4507CF15F80BCFBF62A9A739\", \"The primary rating that defines your physical mitigation\")",
+              "bHidden": false,
+              "gameplayType": "Type_Combat",
+              "bHasWaterfallStatsUI": false,
+              "waterfallStatsUIIds": [],
+              "bDisplayAsPercentage": false,
+              "statType": "Type_Float",
+              "bClampStatFinalValue": false,
+              "bMultiplyStatMods": false,
+              "bMultiplyCompliment": false,
+              "base": {
+                "expression": "GetStat(GetOwner(), $#10516612381411111:109183598614140$)\r\n* EvalFormula($#10516612381411113:6064631902583586849$)"
+              },
+              "waterfallStatsBaseIds": [
+                {
+                  "guid": "109183598614140",
+                  "typeId": "10516612381411111",
+                  "name": "None"
+                }
+              ],
+              "valueMin": {
+                "expression": "0"
+              },
+              "waterfallStatsMinIds": [],
+              "valueMax": {
+                "expression": ""
+              },
+              "waterfallStatsMaxIds": [],
+              "regenRate": {
+                "expression": ""
+              },
+              "waterfallStatsRegenIds": [],
+              "bRegenWhileDead": false,
+              "onSpawn": "Reset_None",
+              "onDeath": "Reset_None",
+              "onRevive": "Reset_None",
+              "bPersistValue": false,
+              "replication": 1,
+              "shieldStatId": {
+                "guid": "0",
+                "typeId": "10516612381411111",
+                "name": "None"
+              },
+              "grantedEffects": [],
+              "guid": "109183607068294",
+              "name": "PhysicalMitigationRating",
+              "typeId": "10516612381411111"
+            }
+          },
+          "6064629444242636800": {
+            "commonMin": 12,
+            "commonMax": 12,
+            "uncommonMin": 13,
+            "uncommonMax": 13,
+            "rareMin": 13,
+            "rareMax": 13,
+            "heroicMin": 14,
+            "heroicMax": 14,
+            "epicMin": 15,
+            "epicMax": 15,
+            "legendaryMin": 16,
+            "legendaryMax": 16,
+            "artifactMin": 0,
+            "artifactMax": 0,
+            "statTypeDef": {
+              "displayName": "NSLOCTEXT(\"\", \"F26F3E224580265EA49C70B9EE308739\", \"Max Durability\")",
+              "description": "",
+              "bHidden": false,
+              "gameplayType": "Type_Artisanship",
+              "bHasWaterfallStatsUI": false,
+              "waterfallStatsUIIds": [],
+              "statType": "Type_Int32",
+              "bClampStatFinalValue": false,
+              "bMultiplyStatMods": false,
+              "base": {
+                "expression": ""
+              },
+              "waterfallStatsBaseIds": [],
+              "valueMin": {
+                "expression": "1"
+              },
+              "waterfallStatsMinIds": [],
+              "valueMax": {
+                "expression": ""
+              },
+              "waterfallStatsMaxIds": [],
+              "regenRate": {
+                "expression": ""
+              },
+              "waterfallStatsRegenIds": [],
+              "bRegenWhileDead": false,
+              "onSpawn": "Reset_None",
+              "onDeath": "Reset_None",
+              "onRevive": "Reset_None",
+              "bPersistValue": false,
+              "replication": 0,
+              "shieldStatId": {
+                "guid": "0",
+                "typeId": "10516612381411111",
+                "name": "None"
+              },
+              "guid": "6064629444242636800",
+              "name": "MaxDurability",
+              "typeId": "10516612381411111"
+            },
+            "statProfile": {
+              "guid": "6064629444242636800",
+              "typeId": "10516612381411111",
+              "name": "None"
+            }
+          },
+          "109183607133840": {
+            "commonMin": 2,
+            "commonMax": 2,
+            "uncommonMin": 2,
+            "uncommonMax": 2,
+            "rareMin": 2,
+            "rareMax": 2,
+            "heroicMin": 2,
+            "heroicMax": 2,
+            "epicMin": 2,
+            "epicMax": 2,
+            "legendaryMin": 2,
+            "legendaryMax": 2,
+            "artifactMin": 0,
+            "artifactMax": 0,
+            "statTypeDef": {
+              "displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"758F1D2A42A65C75352EF3998A39F49B\", \"Magic Resist\")",
+              "description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"881E2FD746E48C0CDC1A7791D61C6B98\", \"The primary rating that defines your magical mitigation\")",
+              "bHidden": false,
+              "gameplayType": "Type_Combat",
+              "bHasWaterfallStatsUI": false,
+              "waterfallStatsUIIds": [],
+              "bDisplayAsPercentage": false,
+              "statType": "Type_Float",
+              "bClampStatFinalValue": false,
+              "bMultiplyStatMods": false,
+              "bMultiplyCompliment": false,
+              "base": {
+                "expression": "GetStat(GetOwner(), $#10516612381411111:109183598614143$)\r\n* EvalFormula($#10516612381411113:6064631902583586849$)"
+              },
+              "waterfallStatsBaseIds": [
+                {
+                  "guid": "109183598614143",
+                  "typeId": "10516612381411111",
+                  "name": "None"
+                }
+              ],
+              "valueMin": {
+                "expression": "0"
+              },
+              "waterfallStatsMinIds": [],
+              "valueMax": {
+                "expression": ""
+              },
+              "waterfallStatsMaxIds": [],
+              "regenRate": {
+                "expression": ""
+              },
+              "waterfallStatsRegenIds": [],
+              "bRegenWhileDead": false,
+              "onSpawn": "Reset_None",
+              "onDeath": "Reset_None",
+              "onRevive": "Reset_None",
+              "bPersistValue": false,
+              "replication": 1,
+              "shieldStatId": {
+                "guid": "0",
+                "typeId": "10516612381411111",
+                "name": "None"
+              },
+              "grantedEffects": [],
+              "guid": "109183607133840",
+              "name": "MagicalMitigationRating",
+              "typeId": "10516612381411111"
+            }
+          },
+          "109183598614140": {
+            "commonMin": 1,
+            "commonMax": 1,
+            "uncommonMin": 1,
+            "uncommonMax": 1,
+            "rareMin": 1,
+            "rareMax": 1,
+            "heroicMin": 1,
+            "heroicMax": 1,
+            "epicMin": 1,
+            "epicMax": 1,
+            "legendaryMin": 1,
+            "legendaryMax": 1,
+            "artifactMin": 0,
+            "artifactMax": 0,
+            "statTypeDef": {
+              "displayName": "Constitution",
+              "description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"45FE2925485BADB44468BA91EC8D742C\", \"Each point of Constitution provides:*10 Max Health*2 Armor*1 Physical Critical Avoidance Rating\")",
+              "bHidden": false,
+              "gameplayType": "Type_Combat",
+              "bHasWaterfallStatsUI": true,
+              "waterfallStatsUIIds": [],
+              "bDisplayAsPercentage": false,
+              "statType": "Type_Float",
+              "bClampStatFinalValue": false,
+              "bMultiplyStatMods": false,
+              "bMultiplyCompliment": false,
+              "base": {
+                "expression": "0"
+              },
+              "waterfallStatsBaseIds": [],
+              "valueMin": {
+                "expression": "0"
+              },
+              "waterfallStatsMinIds": [],
+              "valueMax": {
+                "expression": ""
+              },
+              "waterfallStatsMaxIds": [],
+              "regenRate": {
+                "expression": ""
+              },
+              "waterfallStatsRegenIds": [],
+              "bRegenWhileDead": false,
+              "onSpawn": "Reset_None",
+              "onDeath": "Reset_None",
+              "onRevive": "Reset_None",
+              "bPersistValue": false,
+              "replication": 1,
+              "shieldStatId": {
+                "guid": "0",
+                "typeId": "10516612381411111",
+                "name": "None"
+              },
+              "grantedEffects": [],
+              "guid": "109183598614140",
+              "name": "Constitution",
+              "typeId": "10516612381411111"
+            },
+            "statProfile": {
+              "guid": "109183598614140",
+              "typeId": "10516612381411111",
+              "name": "Stat_Constitution"
+            }
+          },
+          "109183605036676": {
+            "commonMin": 0,
+            "commonMax": 0,
+            "uncommonMin": 1,
+            "uncommonMax": 1,
+            "rareMin": 1,
+            "rareMax": 1,
+            "heroicMin": 1,
+            "heroicMax": 2,
+            "epicMin": 2,
+            "epicMax": 2,
+            "legendaryMin": 2,
+            "legendaryMax": 3,
+            "artifactMin": 0,
+            "artifactMax": 0,
+            "statTypeDef": {
+              "displayName": "NSLOCTEXT(\"\", \"1E99BB8745A762E16A63FC83D563BCF9\", \"Physical Evasion Rating\")",
+              "description": "NSLOCTEXT(\"\", \"BE5E6F3C4C25BF239864EFB8591F3B3B\", \"Reduces the chance to be hit by physical attacks\")",
+              "bHidden": false,
+              "gameplayType": "Type_Combat",
+              "bHasWaterfallStatsUI": false,
+              "waterfallStatsUIIds": [],
+              "bDisplayAsPercentage": false,
+              "statType": "Type_Float",
+              "bClampStatFinalValue": false,
+              "bMultiplyStatMods": false,
+              "bMultiplyCompliment": false,
+              "base": {
+                "expression": "GetStat(GetInstigator(), $#10516612381411111:109183598614139$)"
+              },
+              "waterfallStatsBaseIds": [
+                {
+                  "guid": "109183598614139",
+                  "typeId": "10516612381411111",
+                  "name": "None"
+                }
+              ],
+              "valueMin": {
+                "expression": "0"
+              },
+              "waterfallStatsMinIds": [],
+              "valueMax": {
+                "expression": ""
+              },
+              "waterfallStatsMaxIds": [],
+              "regenRate": {
+                "expression": ""
+              },
+              "waterfallStatsRegenIds": [],
+              "bRegenWhileDead": false,
+              "onSpawn": "Reset_None",
+              "onDeath": "Reset_None",
+              "onRevive": "Reset_None",
+              "bPersistValue": false,
+              "replication": 1,
+              "shieldStatId": {
+                "guid": "0",
+                "typeId": "10516612381411111",
+                "name": "None"
+              },
+              "grantedEffects": [],
+              "guid": "109183605036676",
+              "name": "PhysicalEvasionRating",
+              "typeId": "10516612381411111"
+            }
+          }
+        },
+        "statArchetype": {
+          "109183607068294": "Primary",
+          "109183607133840": "Primary",
+          "109183598614140": "Core",
+          "109183605036676": "Core"
+        },
+        "guid": "6064630605317603355",
+        "name": "Gear_Armor_Heavy_2ndSwordDivision_WaistStatBlock",
+        "typeId": "10911100031237784"
+      },
+      "minRarity": "1",
+      "maxRarity": "6",
+      "_summary": "Heavy Armor Waist",
+      "primaryStats": [
+        {
+          "commonMin": 5,
+          "commonMax": 6,
+          "uncommonMin": 6,
+          "uncommonMax": 6,
+          "rareMin": 6,
+          "rareMax": 6,
+          "heroicMin": 6,
+          "heroicMax": 7,
+          "epicMin": 7,
+          "epicMax": 7,
+          "legendaryMin": 7,
+          "legendaryMax": 8,
+          "artifactMin": 0,
+          "artifactMax": 0,
+          "statTypeDef": {
+            "displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"066C1E554B3F071FCE1EE6B949A51976\", \"Armor\")",
+            "description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"B7AC245C4507CF15F80BCFBF62A9A739\", \"The primary rating that defines your physical mitigation\")",
+            "bHidden": false,
+            "gameplayType": "Type_Combat",
+            "bHasWaterfallStatsUI": false,
+            "waterfallStatsUIIds": [],
+            "bDisplayAsPercentage": false,
+            "statType": "Type_Float",
+            "bClampStatFinalValue": false,
+            "bMultiplyStatMods": false,
+            "bMultiplyCompliment": false,
+            "base": {
+              "expression": "GetStat(GetOwner(), $#10516612381411111:109183598614140$)\r\n* EvalFormula($#10516612381411113:6064631902583586849$)"
+            },
+            "waterfallStatsBaseIds": [
+              {
+                "guid": "109183598614140",
+                "typeId": "10516612381411111",
+                "name": "None"
+              }
+            ],
+            "valueMin": {
+              "expression": "0"
+            },
+            "waterfallStatsMinIds": [],
+            "valueMax": {
+              "expression": ""
+            },
+            "waterfallStatsMaxIds": [],
+            "regenRate": {
+              "expression": ""
+            },
+            "waterfallStatsRegenIds": [],
+            "bRegenWhileDead": false,
+            "onSpawn": "Reset_None",
+            "onDeath": "Reset_None",
+            "onRevive": "Reset_None",
+            "bPersistValue": false,
+            "replication": 1,
+            "shieldStatId": {
+              "guid": "0",
+              "typeId": "10516612381411111",
+              "name": "None"
+            },
+            "grantedEffects": [],
+            "guid": "109183607068294",
+            "name": "PhysicalMitigationRating",
+            "typeId": "10516612381411111"
+          }
+        },
+        {
+          "commonMin": 2,
+          "commonMax": 2,
+          "uncommonMin": 2,
+          "uncommonMax": 2,
+          "rareMin": 2,
+          "rareMax": 2,
+          "heroicMin": 2,
+          "heroicMax": 2,
+          "epicMin": 2,
+          "epicMax": 2,
+          "legendaryMin": 2,
+          "legendaryMax": 2,
+          "artifactMin": 0,
+          "artifactMax": 0,
+          "statTypeDef": {
+            "displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"758F1D2A42A65C75352EF3998A39F49B\", \"Magic Resist\")",
+            "description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"881E2FD746E48C0CDC1A7791D61C6B98\", \"The primary rating that defines your magical mitigation\")",
+            "bHidden": false,
+            "gameplayType": "Type_Combat",
+            "bHasWaterfallStatsUI": false,
+            "waterfallStatsUIIds": [],
+            "bDisplayAsPercentage": false,
+            "statType": "Type_Float",
+            "bClampStatFinalValue": false,
+            "bMultiplyStatMods": false,
+            "bMultiplyCompliment": false,
+            "base": {
+              "expression": "GetStat(GetOwner(), $#10516612381411111:109183598614143$)\r\n* EvalFormula($#10516612381411113:6064631902583586849$)"
+            },
+            "waterfallStatsBaseIds": [
+              {
+                "guid": "109183598614143",
+                "typeId": "10516612381411111",
+                "name": "None"
+              }
+            ],
+            "valueMin": {
+              "expression": "0"
+            },
+            "waterfallStatsMinIds": [],
+            "valueMax": {
+              "expression": ""
+            },
+            "waterfallStatsMaxIds": [],
+            "regenRate": {
+              "expression": ""
+            },
+            "waterfallStatsRegenIds": [],
+            "bRegenWhileDead": false,
+            "onSpawn": "Reset_None",
+            "onDeath": "Reset_None",
+            "onRevive": "Reset_None",
+            "bPersistValue": false,
+            "replication": 1,
+            "shieldStatId": {
+              "guid": "0",
+              "typeId": "10516612381411111",
+              "name": "None"
+            },
+            "grantedEffects": [],
+            "guid": "109183607133840",
+            "name": "MagicalMitigationRating",
+            "typeId": "10516612381411111"
+          }
+        }
+      ],
+      "coreStats": [
+        {
+          "commonMin": 1,
+          "commonMax": 1,
+          "uncommonMin": 1,
+          "uncommonMax": 1,
+          "rareMin": 1,
+          "rareMax": 1,
+          "heroicMin": 1,
+          "heroicMax": 1,
+          "epicMin": 1,
+          "epicMax": 1,
+          "legendaryMin": 1,
+          "legendaryMax": 1,
+          "artifactMin": 0,
+          "artifactMax": 0,
+          "statTypeDef": {
+            "displayName": "Constitution",
+            "description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"45FE2925485BADB44468BA91EC8D742C\", \"Each point of Constitution provides:*10 Max Health*2 Armor*1 Physical Critical Avoidance Rating\")",
+            "bHidden": false,
+            "gameplayType": "Type_Combat",
+            "bHasWaterfallStatsUI": true,
+            "waterfallStatsUIIds": [],
+            "bDisplayAsPercentage": false,
+            "statType": "Type_Float",
+            "bClampStatFinalValue": false,
+            "bMultiplyStatMods": false,
+            "bMultiplyCompliment": false,
+            "base": {
+              "expression": "0"
+            },
+            "waterfallStatsBaseIds": [],
+            "valueMin": {
+              "expression": "0"
+            },
+            "waterfallStatsMinIds": [],
+            "valueMax": {
+              "expression": ""
+            },
+            "waterfallStatsMaxIds": [],
+            "regenRate": {
+              "expression": ""
+            },
+            "waterfallStatsRegenIds": [],
+            "bRegenWhileDead": false,
+            "onSpawn": "Reset_None",
+            "onDeath": "Reset_None",
+            "onRevive": "Reset_None",
+            "bPersistValue": false,
+            "replication": 1,
+            "shieldStatId": {
+              "guid": "0",
+              "typeId": "10516612381411111",
+              "name": "None"
+            },
+            "grantedEffects": [],
+            "guid": "109183598614140",
+            "name": "Constitution",
+            "typeId": "10516612381411111"
+          },
+          "statProfile": {
+            "guid": "109183598614140",
+            "typeId": "10516612381411111",
+            "name": "Stat_Constitution"
+          }
+        },
+        {
+          "commonMin": 0,
+          "commonMax": 0,
+          "uncommonMin": 1,
+          "uncommonMax": 1,
+          "rareMin": 1,
+          "rareMax": 1,
+          "heroicMin": 1,
+          "heroicMax": 2,
+          "epicMin": 2,
+          "epicMax": 2,
+          "legendaryMin": 2,
+          "legendaryMax": 3,
+          "artifactMin": 0,
+          "artifactMax": 0,
+          "statTypeDef": {
+            "displayName": "NSLOCTEXT(\"\", \"1E99BB8745A762E16A63FC83D563BCF9\", \"Physical Evasion Rating\")",
+            "description": "NSLOCTEXT(\"\", \"BE5E6F3C4C25BF239864EFB8591F3B3B\", \"Reduces the chance to be hit by physical attacks\")",
+            "bHidden": false,
+            "gameplayType": "Type_Combat",
+            "bHasWaterfallStatsUI": false,
+            "waterfallStatsUIIds": [],
+            "bDisplayAsPercentage": false,
+            "statType": "Type_Float",
+            "bClampStatFinalValue": false,
+            "bMultiplyStatMods": false,
+            "bMultiplyCompliment": false,
+            "base": {
+              "expression": "GetStat(GetInstigator(), $#10516612381411111:109183598614139$)"
+            },
+            "waterfallStatsBaseIds": [
+              {
+                "guid": "109183598614139",
+                "typeId": "10516612381411111",
+                "name": "None"
+              }
+            ],
+            "valueMin": {
+              "expression": "0"
+            },
+            "waterfallStatsMinIds": [],
+            "valueMax": {
+              "expression": ""
+            },
+            "waterfallStatsMaxIds": [],
+            "regenRate": {
+              "expression": ""
+            },
+            "waterfallStatsRegenIds": [],
+            "bRegenWhileDead": false,
+            "onSpawn": "Reset_None",
+            "onDeath": "Reset_None",
+            "onRevive": "Reset_None",
+            "bPersistValue": false,
+            "replication": 1,
+            "shieldStatId": {
+              "guid": "0",
+              "typeId": "10516612381411111",
+              "name": "None"
+            },
+            "grantedEffects": [],
+            "guid": "109183605036676",
+            "name": "PhysicalEvasionRating",
+            "typeId": "10516612381411111"
+          }
+        }
+      ],
+      "_setBonuses": [
+        {
+          "setDisplayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"E73461E6476089E4C8C45FBCE1D83208\", \"Heavy Armor\")",
+          "setEffects": {
+            "3": {
+              "statEffects": [
+                {
+                  "effectedStat": {
+                    "guid": "6064628617716498440",
+                    "typeId": "10516612381411111",
+                    "name": "Base Mitigation",
+                    "bDisplayAsPercentage": true
+                  },
+                  "statEffects": {
+                    "common": 0.00999999977648258,
+                    "uncommon": 0.0199999995529652,
+                    "rare": 0.0299999993294477,
+                    "heroic": 0.0399999991059303,
+                    "epic": 0.0500000007450581,
+                    "legendary": 0.0599999986588955,
+                    "artifact": 0
+                  }
+                }
+              ]
+            },
+            "5": {
+              "statEffects": [
+                {
+                  "effectedStat": {
+                    "guid": "109343236642458",
+                    "typeId": "10516612381411111",
+                    "name": "Healing Received",
+                    "bDisplayAsPercentage": true
+                  },
+                  "statEffects": {
+                    "common": 0.00999999977648258,
+                    "uncommon": 0.0199999995529652,
+                    "rare": 0.0299999993294477,
+                    "heroic": 0.0399999991059303,
+                    "epic": 0.0500000007450581,
+                    "legendary": 0.0599999986588955,
+                    "artifact": 0
+                  }
+                },
+                {
+                  "effectedStat": {
+                    "guid": "6064629618868486307",
+                    "typeId": "10516612381411111",
+                    "name": "Disable Reduction",
+                    "bDisplayAsPercentage": true
+                  },
+                  "statEffects": {
+                    "common": 0.00999999977648258,
+                    "uncommon": 0.0199999995529652,
+                    "rare": 0.0299999993294477,
+                    "heroic": 0.0399999991059303,
+                    "epic": 0.0500000007450581,
+                    "legendary": 0.0599999986588955,
+                    "artifact": 0
+                  }
+                }
+              ]
+            },
+            "8": {
+              "statEffects": [
+                {
+                  "effectedStat": {
+                    "guid": "6064628617693364225",
+                    "typeId": "10516612381411111",
+                    "name": "Base Critical Power",
+                    "bDisplayAsPercentage": true
+                  },
+                  "statEffects": {
+                    "common": 0.0299999993294477,
+                    "uncommon": 0.0599999986588955,
+                    "rare": 0.0900000035762787,
+                    "heroic": 0.119999997317791,
+                    "epic": 0.150000005960464,
+                    "legendary": 0.200000002980232,
+                    "artifact": 0
+                  }
+                }
+              ]
+            }
+          },
+          "guid": "6064632299839554424",
+          "name": "Armor_Heavy",
+          "typeId": "51949899"
+        }
+      ],
+      "_baseItemValue": {
+        "buyingCurrencyTierId": {
+          "guid": "6064629127873626112",
+          "typeId": "1011111289",
+          "name": "None"
+        },
+        "sellingCurrencyTierId": {
+          "guid": "6064629127873626112",
+          "typeId": "1011111289",
+          "name": "None"
+        },
+        "currencyValues": {},
+        "guid": "6064632280835031041",
+        "name": "Gear",
+        "typeId": "3145314713"
+      },
+      "_craftingRecipes": [
+        {
+          "professionId": {
+            "guid": "108752746927739",
+            "typeId": "8125613373123",
+            "name": "None"
+          },
+          "certificationLevelId": {
+            "guid": "108906339653240",
+            "typeId": "455189666431",
+            "name": "None"
+          },
+          "learnable": true,
+          "overrideName": "",
+          "categoryTag": {
+            "tagName": "Slot.Waist"
+          },
+          "difficulty": 0,
+          "defaultQuality": 0,
+          "fuel": 0,
+          "fuelTags": {
+            "gameplayTags": [],
+            "parentTags": []
+          },
+          "bUseOverrides": false,
+          "overrides": [],
+          "nodeLevel": "Wilderness",
+          "levelingTemplateId": {
+            "guid": "109307981158008",
+            "typeId": "4565416516154",
+            "name": "None"
+          },
+          "baseDuration": 2,
+          "durationFormula": {
+            "expression": ""
+          },
+          "qualityFormula": {
+            "expression": "GetCraftingRecipeQuality() + EvalFormula($#10516612381411113:6064630356495171650$)"
+          },
+          "quantityFormula": {
+            "expression": ""
+          },
+          "rewardId": {
+            "guid": "6064629643313086496",
+            "typeId": "1091110040",
+            "name": "None"
+          },
+          "itemDestination": "Inventory",
+          "primaryResourceCosts": [],
+          "generalResourceCost": [
+            {
+              "item": {
+                "guid": "6064630417661689952",
+                "typeId": "1091110003",
+                "name": "None"
+              },
+              "quantity": 2,
+              "bConsumeInCrafting": true
+            },
+            {
+              "item": {
+                "guid": "6064630417661821030",
+                "typeId": "1091110003",
+                "name": "None"
+              },
+              "quantity": 1,
+              "bConsumeInCrafting": true
+            },
+            {
+              "item": {
+                "guid": "6064630417661165619",
+                "typeId": "1091110003",
+                "name": "None"
+              },
+              "quantity": 1,
+              "bConsumeInCrafting": true
+            }
+          ],
+          "craftingCurrencyCostId": {
+            "guid": "6064631154666045441",
+            "typeId": "9565237358",
+            "name": "None"
+          },
+          "subRecipesIds": [],
+          "skillTreeSpecializationId": {
+            "guid": "0",
+            "typeId": "30316003",
+            "name": "None"
+          },
+          "bCanFastCraft": true,
+          "bCanGameplayLayer": true,
+          "weaponsmithingInfoId": {
+            "guid": "0",
+            "typeId": "1636976253",
+            "name": "None"
+          },
+          "guid": "6064629386974855193",
+          "name": "Armorsmithing_T1_Armor_2ndSwordDivision_Waist",
+          "typeId": "163697",
+          "_profession": "Armorsmithing",
+          "_professionName": "Armor Smithing",
+          "_professionIcon": "/Game/UI/Icons/Items/Gear/Armor/Heavy/Head/TUI_Icon_Gear_Armor_Heavy_Titanbark_Head.TUI_Icon_Gear_Armor_Heavy_Titanbark_Head",
+          "_certificationLevel": "Novice",
+          "_certificationLevelMin": 1,
+          "_certificationLevelMax": 10,
+          "_rewardItems": [
+            {
+              "guid": "6064628793932775728",
+              "name": "Gear_Armor_Heavy_2ndSwordDivision_Waist",
+              "itemName": "2nd Sword Division's Belt",
+              "minRarity": "1",
+              "displayIcon": "/Game/UI/Icons/Items/Gear/Armor/Heavy/Waist/TUI_Icon_Gear_Armor_Heavy_Waist_2ndSword.TUI_Icon_Gear_Armor_Heavy_Waist_2ndSword",
+              "amount": {
+                "expression": "1"
+              }
+            }
+          ]
+        }
+      ],
+      "_usedIn": [],
+      "_droppedBy": [
+        {
+          "_displayName": "Animated Armor Knight",
+          "_slug": "animated-armor-knight",
+          "_levelRange": "6 - 7"
+        },
+        {
+          "_displayName": "Animated Armor Soldier",
+          "_slug": "animated-armor-soldier",
+          "_levelRange": "6"
+        },
+        {
+          "_displayName": "Black Marketeer",
+          "_slug": "black-marketeer",
+          "_levelRange": "7 - 9"
+        },
+        {
+          "_displayName": "Captain of the 9th",
+          "_slug": "captain-of-the-9th",
+          "_levelRange": "7"
+        },
+        {
+          "_displayName": "Captain Roderick Bloodbane",
+          "_slug": "captain-roderick-bloodbane",
+          "_levelRange": "3"
+        },
+        {
+          "_displayName": "Caravan Raider",
+          "_slug": "caravan-raider",
+          "_levelRange": "2 - 9"
+        },
+        {
+          "_displayName": "Corrupted 9th Shield",
+          "_slug": "corrupted-9th-shield",
+          "_levelRange": "5 - 7"
+        },
+        {
+          "_displayName": "Cursed Knight",
+          "_slug": "cursed-knight",
+          "_levelRange": "5"
+        },
+        {
+          "_displayName": "Fallen Purifier",
+          "_slug": "fallen-purifier",
+          "_levelRange": "3 - 5"
+        },
+        {
+          "_displayName": "Forsaken Blades Arsonist",
+          "_slug": "forsaken-blades-arsonist",
+          "_levelRange": "4 - 6"
+        },
+        {
+          "_displayName": "Forsaken Blades Chronicller",
+          "_slug": "forsaken-blades-chronicller",
+          "_levelRange": "4 - 6"
+        },
+        {
+          "_displayName": "Forsaken Blades Raider",
+          "_slug": "forsaken-blades-raider",
+          "_levelRange": "4 - 6"
+        },
+        {
+          "_displayName": "Galen Googan",
+          "_slug": "galen-googan",
+          "_levelRange": "6"
+        },
+        {
+          "_displayName": "Grave Robber",
+          "_slug": "grave-robber",
+          "_levelRange": "1 - 7"
+        },
+        {
+          "_displayName": "Grim Harvester",
+          "_slug": "grim-harvester",
+          "_levelRange": "5 - 6"
+        },
+        {
+          "_displayName": "Highwayman Archer",
+          "_slug": "highwayman-archer",
+          "_levelRange": "1 - 8"
+        },
+        {
+          "_displayName": "Highwayman Arsonist",
+          "_slug": "highwayman-arsonist",
+          "_levelRange": "1 - 8"
+        },
+        {
+          "_displayName": "Highwayman Commander",
+          "_slug": "highwayman-commander",
+          "_levelRange": "7"
+        },
+        {
+          "_displayName": "Highwayman Healer",
+          "_slug": "highwayman-healer",
+          "_levelRange": "1 - 8"
+        },
+        {
+          "_displayName": "Highwayman Lookout",
+          "_slug": "highwayman-lookout",
+          "_levelRange": "7 - 9"
+        },
+        {
+          "_displayName": "Highwayman Raider",
+          "_slug": "highwayman-raider",
+          "_levelRange": "1 - 8"
+        },
+        {
+          "_displayName": "Highwaymen Defender",
+          "_slug": "highwaymen-defender",
+          "_levelRange": "1 - 8"
+        },
+        {
+          "_displayName": "Mournful Revenant",
+          "_slug": "mournful-revenant",
+          "_levelRange": "7 - 10"
+        },
+        {
+          "_displayName": "Quick Teddie",
+          "_slug": "quick-teddie",
+          "_levelRange": "5"
+        },
+        {
+          "_displayName": "Reckless Outlaw",
+          "_slug": "reckless-outlaw",
+          "_levelRange": "3"
+        },
+        {
+          "_displayName": "Rickard the Purifier",
+          "_slug": "rickard-the-purifier",
+          "_levelRange": "5"
+        },
+        {
+          "_displayName": "Skeleton Knight",
+          "_slug": "skeleton-knight",
+          "_levelRange": "4 - 6"
+        },
+        {
+          "_displayName": "Skeleton Nightterror",
+          "_slug": "skeleton-nightterror",
+          "_levelRange": "6 - 8"
+        },
+        {
+          "_displayName": "Zephyr Wind Shafra",
+          "_slug": "zephyr-wind-shafra",
+          "_levelRange": "6 - 7"
+        }
+      ],
+      "_droppedIn": [],
+      "_enchantmentDef": {
+        "enchantmentLevelDefsIds": {
+          "0": {
+            "guid": "6064631721238855839",
+            "typeId": "10912161337",
+            "name": "Waist_Level_1",
+            "primaryStatIncrease": 0.00999999977648258,
+            "secondaryStatIncrease": 0.00999999977648258,
+            "goldCost": 432,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.899999976158142,
+            "failureChances": {
+              "fAILURE": 1
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "1": {
+            "guid": "6064631721238921376",
+            "typeId": "10912161337",
+            "name": "Waist_Level_2",
+            "primaryStatIncrease": 0.0199999995529652,
+            "secondaryStatIncrease": 0.0199999995529652,
+            "goldCost": 864,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.899999976158142,
+            "failureChances": {
+              "fAILURE": 1
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "2": {
+            "guid": "6064631721238986913",
+            "typeId": "10912161337",
+            "name": "Waist_Level_3",
+            "primaryStatIncrease": 0.0299999993294477,
+            "secondaryStatIncrease": 0.0299999993294477,
+            "goldCost": 1296,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.800000011920929,
+            "failureChances": {
+              "fAILURE": 1
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "3": {
+            "guid": "6064631721238986914",
+            "typeId": "10912161337",
+            "name": "Waist_Level_4",
+            "primaryStatIncrease": 0.0399999991059303,
+            "secondaryStatIncrease": 0.0399999991059303,
+            "goldCost": 1728,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.699999988079071,
+            "failureChances": {
+              "fAILURE": 0.899999976158142,
+              "fAILURE_LEVEL_LOSS": 0.100000001490116
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "4": {
+            "guid": "6064631721238986915",
+            "typeId": "10912161337",
+            "name": "Waist_Level_5",
+            "primaryStatIncrease": 0.0500000007450581,
+            "secondaryStatIncrease": 0.0500000007450581,
+            "goldCost": 2160,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.600000023841858,
+            "failureChances": {
+              "fAILURE": 0.800000011920929,
+              "fAILURE_LEVEL_LOSS": 0.200000002980232
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "5": {
+            "guid": "6064631721238986916",
+            "typeId": "10912161337",
+            "name": "Waist_Level_6",
+            "primaryStatIncrease": 0.0599999986588955,
+            "secondaryStatIncrease": 0.0599999986588955,
+            "goldCost": 2592,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.5,
+            "failureChances": {
+              "fAILURE": 0.699999988079071,
+              "fAILURE_LEVEL_LOSS": 0.300000011920929
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "6": {
+            "guid": "6064631721238986917",
+            "typeId": "10912161337",
+            "name": "Waist_Level_7",
+            "primaryStatIncrease": 0.0700000002980232,
+            "secondaryStatIncrease": 0.0700000002980232,
+            "goldCost": 3024,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.5,
+            "failureChances": {
+              "fAILURE": 0.649999976158142,
+              "fAILURE_LEVEL_LOSS": 0.300000011920929,
+              "fAILURE_LEVEL_LOSS_ALL": 0.0500000007450581
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "7": {
+            "guid": "6064631721239052454",
+            "typeId": "10912161337",
+            "name": "Waist_Level_8",
+            "primaryStatIncrease": 0.0799999982118607,
+            "secondaryStatIncrease": 0.0799999982118607,
+            "goldCost": 3456,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.400000005960465,
+            "failureChances": {
+              "fAILURE": 0.5,
+              "fAILURE_LEVEL_LOSS": 0.349999994039536,
+              "fAILURE_LEVEL_LOSS_ALL": 0.150000005960464
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "8": {
+            "guid": "6064631721239052455",
+            "typeId": "10912161337",
+            "name": "Waist_Level_9",
+            "primaryStatIncrease": 0.0900000035762787,
+            "secondaryStatIncrease": 0.0900000035762787,
+            "goldCost": 3888,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.400000005960465,
+            "failureChances": {
+              "fAILURE": 0.449999988079071,
+              "fAILURE_LEVEL_LOSS": 0.300000011920929,
+              "fAILURE_LEVEL_LOSS_ALL": 0.200000002980232,
+              "fAILURE_BREAK": 0.0500000007450581
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "9": {
+            "guid": "6064631721239052456",
+            "typeId": "10912161337",
+            "name": "Waist_Level_10",
+            "primaryStatIncrease": 0.100000001490116,
+            "secondaryStatIncrease": 0.100000001490116,
+            "goldCost": 4320,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.300000011920929,
+            "failureChances": {
+              "fAILURE": 0.349999994039536,
+              "fAILURE_LEVEL_LOSS": 0.349999994039536,
+              "fAILURE_LEVEL_LOSS_ALL": 0.200000002980232,
+              "fAILURE_BREAK": 0.100000001490116
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "10": {
+            "guid": "6064631721239052457",
+            "typeId": "10912161337",
+            "name": "Waist_Level_11",
+            "primaryStatIncrease": 0.109999999403954,
+            "secondaryStatIncrease": 0.109999999403954,
+            "goldCost": 4752,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.300000011920929,
+            "failureChances": {
+              "fAILURE": 0.349999994039536,
+              "fAILURE_LEVEL_LOSS": 0.300000011920929,
+              "fAILURE_LEVEL_LOSS_ALL": 0.200000002980232,
+              "fAILURE_BREAK": 0.150000005960464
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "11": {
+            "guid": "6064631721239052458",
+            "typeId": "10912161337",
+            "name": "Waist_Level_12",
+            "primaryStatIncrease": 0.119999997317791,
+            "secondaryStatIncrease": 0.119999997317791,
+            "goldCost": 5184,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.200000002980232,
+            "failureChances": {
+              "fAILURE": 0.25,
+              "fAILURE_LEVEL_LOSS": 0.349999994039536,
+              "fAILURE_LEVEL_LOSS_ALL": 0.200000002980232,
+              "fAILURE_BREAK": 0.200000002980232
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "12": {
+            "guid": "6064631721239052459",
+            "typeId": "10912161337",
+            "name": "Waist_Level_13",
+            "primaryStatIncrease": 0.129999995231628,
+            "secondaryStatIncrease": 0.129999995231628,
+            "goldCost": 5616,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.200000002980232,
+            "failureChances": {
+              "fAILURE": 0.200000002980232,
+              "fAILURE_LEVEL_LOSS": 0.349999994039536,
+              "fAILURE_LEVEL_LOSS_ALL": 0.200000002980232,
+              "fAILURE_BREAK": 0.25
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "13": {
+            "guid": "6064631721239117996",
+            "typeId": "10912161337",
+            "name": "Waist_Level_14",
+            "primaryStatIncrease": 0.140000000596046,
+            "secondaryStatIncrease": 0.140000000596046,
+            "goldCost": 6048,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.100000001490116,
+            "failureChances": {
+              "fAILURE": 0.150000005960464,
+              "fAILURE_LEVEL_LOSS": 0.300000011920929,
+              "fAILURE_LEVEL_LOSS_ALL": 0.25,
+              "fAILURE_BREAK": 0.300000011920929
+            },
+            "gemSlots": 0,
+            "bBroadcast": false
+          },
+          "14": {
+            "guid": "6064631721239117997",
+            "typeId": "10912161337",
+            "name": "Waist_Level_15",
+            "primaryStatIncrease": 0.150000005960464,
+            "secondaryStatIncrease": 0.150000005960464,
+            "goldCost": 6480,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.100000001490116,
+            "failureChances": {
+              "fAILURE": 0.100000001490116,
+              "fAILURE_LEVEL_LOSS": 0.25,
+              "fAILURE_LEVEL_LOSS_ALL": 0.300000011920929,
+              "fAILURE_BREAK": 0.349999994039536
+            },
+            "gemSlots": 0,
+            "bBroadcast": true
+          },
+          "15": {
+            "guid": "6064631721239117998",
+            "typeId": "10912161337",
+            "name": "Waist_Level_16",
+            "primaryStatIncrease": 0.159999996423721,
+            "secondaryStatIncrease": 0.159999996423721,
+            "goldCost": 6912,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.0500000007450581,
+            "failureChances": {
+              "fAILURE": 0.0500000007450581,
+              "fAILURE_LEVEL_LOSS": 0.25,
+              "fAILURE_LEVEL_LOSS_ALL": 0.300000011920929,
+              "fAILURE_BREAK": 0.400000005960465
+            },
+            "gemSlots": 0,
+            "bBroadcast": true
+          },
+          "16": {
+            "guid": "6064631721239117999",
+            "typeId": "10912161337",
+            "name": "Waist_Level_17",
+            "primaryStatIncrease": 0.170000001788139,
+            "secondaryStatIncrease": 0.170000001788139,
+            "goldCost": 7344,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.0399999991059303,
+            "failureChances": {
+              "fAILURE": 0.0500000007450581,
+              "fAILURE_LEVEL_LOSS": 0.200000002980232,
+              "fAILURE_LEVEL_LOSS_ALL": 0.300000011920929,
+              "fAILURE_BREAK": 0.449999988079071
+            },
+            "gemSlots": 0,
+            "bBroadcast": true
+          },
+          "17": {
+            "guid": "6064631721239118000",
+            "typeId": "10912161337",
+            "name": "Waist_Level_18",
+            "primaryStatIncrease": 0.180000007152557,
+            "secondaryStatIncrease": 0.180000007152557,
+            "goldCost": 7776,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.0299999993294477,
+            "failureChances": {
+              "fAILURE": 0.0500000007450581,
+              "fAILURE_LEVEL_LOSS": 0.150000005960464,
+              "fAILURE_LEVEL_LOSS_ALL": 0.300000011920929,
+              "fAILURE_BREAK": 0.5
+            },
+            "gemSlots": 0,
+            "bBroadcast": true
+          },
+          "18": {
+            "guid": "6064631721239118001",
+            "typeId": "10912161337",
+            "name": "Waist_Level_19",
+            "primaryStatIncrease": 0.189999997615814,
+            "secondaryStatIncrease": 0.189999997615814,
+            "goldCost": 8208,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.0199999995529652,
+            "failureChances": {
+              "fAILURE": 0.0500000007450581,
+              "fAILURE_LEVEL_LOSS": 0.100000001490116,
+              "fAILURE_LEVEL_LOSS_ALL": 0.349999994039536,
+              "fAILURE_BREAK": 0.5
+            },
+            "gemSlots": 0,
+            "bBroadcast": true
+          },
+          "19": {
+            "guid": "6064631721239118002",
+            "typeId": "10912161337",
+            "name": "Waist_Level_20",
+            "primaryStatIncrease": 0.200000002980232,
+            "secondaryStatIncrease": 0.200000002980232,
+            "goldCost": 8640,
+            "goldModifier": {
+              "expression": "evalformula($#10516612381411113:6064631760903208961$)"
+            },
+            "successChance": 0.00999999977648258,
+            "failureChances": {
+              "fAILURE": 0.0500000007450581,
+              "fAILURE_LEVEL_LOSS": 0.0500000007450581,
+              "fAILURE_LEVEL_LOSS_ALL": 0.400000005960465,
+              "fAILURE_BREAK": 0.5
+            },
+            "gemSlots": 0,
+            "bBroadcast": true
+          }
+        },
+        "guid": "6064631986592481298",
+        "name": "Waist",
+        "typeId": "10912151337"
+      },
+      "_soldBy": [],
+      "_rewardFrom": [
+        "6064629643313086496",
+        "6064632214847619996",
+        "6064632242649236367",
+        "6064632243056411558",
+        "6064632243082822574",
+        "6064632254775296062",
+        "6064632255152586860",
+        "6064632255310659699",
+        "6064632259325001818",
+        "6064632756459864086",
+        "6064632756491976737",
+        "6064632756512686127",
+        "6064632756513013808"
+      ]
+    }
+  ]
+}
