@@ -1,0 +1,128 @@
+{
+  "data": [
+    {
+      "effectCategory": "EFFECT_Debuff",
+      "effectTags": [
+        {
+          "tagName": "Element.Physical.Bleed"
+        },
+        {
+          "tagName": "Debuff.Bleeding"
+        }
+      ],
+      "effectName": "Bleeding",
+      "effectDescription": "Suffering <span style=\"color: #B67A6A;\">(15%)</span> <span style=\"color: #A6132C;\">bleed</span> <span style=\"color: #B67A6A;\">damage</span> every second.",
+      "effectIcon": "/Game/UI/Icons/StatusEffects/TUI_IconStatus_Bleed.TUI_IconStatus_Bleed",
+      "effectFloatingText": "Bleeding",
+      "bDispellable": true,
+      "bSignificant": false,
+      "scriptOnApply": "None",
+      "scriptOnExpire": "None",
+      "bSetUnkillable": false,
+      "bGrantsPVPOptInProtection": false,
+      "effectFXId": {
+        "guid": "6064629030192873484",
+        "typeId": "30316008",
+        "name": "None"
+      },
+      "applicationRequirements": {
+        "expression": ""
+      },
+      "bOverrideDefaultResistRate": false,
+      "resistRate": {
+        "expression": ""
+      },
+      "bInfiniteDuration": false,
+      "effectDuration": {
+        "expression": "6"
+      },
+      "bNumStacksLostOnDurationElapse": false,
+      "numStacksLostOnDurationElapse": {
+        "expression": ""
+      },
+      "bPersistsThroughDeath": false,
+      "bPersistsRelog": false,
+      "effectGroupId": {
+        "guid": "0",
+        "typeId": "30316004",
+        "name": "None"
+      },
+      "effectStackType": "STACK_StackInPlace",
+      "bCompareSourceWhenStacking": true,
+      "collateStacksInUI": true,
+      "globalStackLimit": 20,
+      "inPlaceStackLimit": {
+        "expression": "1"
+      },
+      "stackDurationRefresh": "STACK_ExtendDuration",
+      "extensionAmount": {
+        "expression": "6"
+      },
+      "extendedMaximum": 12,
+      "scriptOnMaxStacks": "None",
+      "bLimitStacksFromInstigator": false,
+      "instigatorStackLimit": {
+        "expression": ""
+      },
+      "tickTimer": 1,
+      "bIgnoreInitialTick": true,
+      "scriptOnTick": "None",
+      "bRecalculateHitOnTick": false,
+      "preApplyHitsIds": [],
+      "applyHitsIds": [],
+      "tickHitsIds": [
+        {
+          "guid": "6064629771962485672",
+          "typeId": "30316005",
+          "name": "None"
+        }
+      ],
+      "consumeHitsIds": [],
+      "removeHitsIds": [],
+      "expireHitsIds": [],
+      "endHitsIds": [],
+      "statModsIds": [],
+      "spawnNPCsIds": [],
+      "spawnLingeringZonesIds": [],
+      "redirectsIds": [],
+      "reactionsIds": [],
+      "crowdControlId": {
+        "guid": "0",
+        "typeId": "3031600206",
+        "name": "None"
+      },
+      "resistancesIds": [],
+      "fragilityDefinitionsIds": [],
+      "hitModsIds": [],
+      "addAlignmentsIds": [],
+      "removeAlignmentsIds": [],
+      "bApplyScale": false,
+      "scaleAmount": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scaleTime": 0,
+      "statusVFX": "None",
+      "bAppliesStealth": false,
+      "supressClickTargeting": {
+        "expression": ""
+      },
+      "supressTabAndSoftTargeting": {
+        "expression": ""
+      },
+      "supressNameplate": {
+        "expression": ""
+      },
+      "bSlowFall": false,
+      "bNeverCull": false,
+      "addedAkEvents": [],
+      "removedAkEvents": [],
+      "akSwitchValues": [],
+      "guid": "6064629761775576467",
+      "name": "Status_Bleeding",
+      "typeId": "30316002",
+      "_statMods": []
+    }
+  ]
+}

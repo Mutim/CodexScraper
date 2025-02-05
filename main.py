@@ -51,6 +51,7 @@ import requests
 from dotenv import load_dotenv
 from supabase import create_client, Client
 import postgrest
+import psycopg2
 
 import config
 
@@ -74,28 +75,102 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 ASHES_AUTH = os.getenv("ASHES_AUTH")  # 'Bearer token'
 ASHES_KEY = os.getenv("ASHES_KEY")  # The API key that you send when you send a request to codex
 
+# Database Information -
+# Found at https://supabase.com/dashboard/project/{your-database-url}/editor?showConnect=true
+USER = os.getenv("USER")
+PASSWORD = os.getenv("PASSWORD")
+HOST = os.getenv("HOST")
+PORT = os.getenv("PORT")
+DBNAME = os.getenv("DBNAME")
 
-def generate_numeric_guid(entry):
-    entry_str = str(entry)
-    hash_object = hashlib.md5(entry_str.encode())
-    return int(hash_object.hexdigest(), 16) % (10**18)
+
+def create_table():
+    print("Attempting connection...")
+    try:
+        with psycopg2.connect(
+            user=USER,
+            password=PASSWORD,
+            host=HOST,
+            port=PORT,
+            dbname=DBNAME
+        ) as connection:
+            print("Connection successful!")
+            with connection.cursor() as cursor:
+                with open('sql/schemas.sql', 'r') as sql_file:
+                    schemas = sql_file.read().strip()
+                    schema_sections = schemas.split('-- ###BREAK')
+                    table_create = schema_sections[1]
+
+                if not table_create:
+                    print("Error: SQL Query is empty!")
+                    return
+
+                cursor.execute(table_create)
+                connection.commit()
+                print("Table Successfully Created!")
+
+    except psycopg2.Error as e:
+        print(f"Database error: {e}")
 
 
-def create_table(client):
-    with open('sql/schemas.sql', 'r') as sql_file:
-        schemas = sql_file.read()
-    schema_sections = schemas.split('-- ###BREAK')
-    table_create = schema_sections[0]
-    response = client.postgrest.rpc("sql", {"query": table_create}).execute()
+def retry_upsert(entries, section, page):
+    max_retries = 5
+    retry_count = 0
+    backoff = 2
 
-    if response.status_code == 200:
-        print("Table created successfully!")
-    else:
-        print(f"Error creating table: {response.status_code}")
+    while retry_count < max_retries:
+        try:
+            res = supabase.table("codex").upsert(entries).execute()
+
+            if res.data:
+
+                print(f"Created or Updated | {len(res.data)} "
+                      f"total entries for \033[0;32m`{section}`\033[0m page {page}.")
+            else:
+                print(f"No new data inserted for `{section}` on page {page}. Data may already exist.")
+
+            return True
+
+        except postgrest.exceptions.APIError as e:
+            error_code = str(getattr(e, "code", "N/A"))
+            if error_code == "57014":  # Statement timeout
+                print(
+                    f"\033[0;33mError 57014: POST to database timed out on page {page} of section `{section}`.\033[0m"
+                    f"Retrying in {backoff} seconds...")
+                time.sleep(backoff)
+                retry_count += 1
+                backoff *= 2
+            elif error_code == "23505":  # Duplicate key error
+                print(f"\033[0;33mError 23505: Duplicate GUID detected in `{section}` on page {page}. Skipping entry.\033[0m")
+                return False
+            elif error_code == "520":  # JSON could not be generated
+                print(
+                    f"\033[0;33mError 520: JSON object could not be generated for `{section}` on page {page}.\033[0m"
+                    f"Object is too large...")
+                return False
+            elif error_code == "21000":  # ON CONFLICT DO UPDATE affecting row twice
+                print(f"\033[0;33mError 21000: ON CONFLICT DO UPDATE command cannot affect row a second time. Skipping entry.")
+                return False
+            elif error_code == "23502":  # ON CONFLICT DO UPDATE affecting row twice
+                print(f"\033[0;33mError 23502: Missing GUID in entry. Skipping entry.")
+                return False
+            else:
+                print(f"\033[0;33mUnexpected API error while upsert section `{section}` on page {page}:\033[0m\n{e}")
+                cont = input(f"\nPlease report: {e.code} as message: {e.hint}. "
+                             f"Type 'exit' to quit, or press ENTER to continue.\n > ")
+                if not cont.lower() == "exit":
+                    return False
+                sys.exit(f"\033[0;33mDB has been force closed with errors.\033[0m")
+        if retry_count >= max_retries:
+            print(f"Max retries reached for page {page} of section `{section}`. Skipping.")
+            return False
+
+    return False
 
 
 def scrape():
-    sections = ["items", "mobs", "hunting-creatures", "npcs", "pois", "status-effects", "xp-tables"]
+    # Removed xp-tables. The data is all over the place, and has no structure. Lists, lists of objects, objects of list.
+    sections = ["items", "mobs", "abilities", "hunting-creatures", "npcs", "pois", "status-effects"]
 
     params = {
         "select": "data",
@@ -123,27 +198,19 @@ def scrape():
             while timeouts <= 5:
                 try:
                     response = requests.get(url, headers=headers, params=params, timeout=30)
+
+                    if response.status_code == 429:
+                        retry_after = int(response.headers.get("Retry-After", 60))
+                        print(f"Rate-limited. Retrying after {retry_after} seconds...")
+                        time.sleep(retry_after)
+                        continue
                     break
                 except requests.exceptions.Timeout:
                     timeouts += 1
                     print(f"Request timed out on page {page} of section `{section}`. Retrying in 5 seconds...")
                     time.sleep(5)
-                except postgrest.exceptions.APIError as e:
-                    if e.code == "57014":  # Statement timeout
-                        timeouts += 1
-                        print(
-                            f"POST to database timed out on page {page} of section `{section}`. Retrying in 5 seconds...")
-                        time.sleep(5)
-                    else:
-                        exit(f"Unexpected API error: {e}")
             else:
-                exit(f"Failed after 5 timeouts on page {page} of section `{section}`. Quitting...")
-
-            # Handle error codes
-            if response.status_code == 429:
-                retry_after = int(response.headers.get("Retry-After", 60))
-                print(f"Rate-limited. Retrying after {retry_after} seconds...")
-                time.sleep(retry_after)
+                print(f"Failed after 5 timeouts on page {page} of section `{section}`. Skipping...")
                 continue
 
             if response.status_code != 200:
@@ -151,17 +218,23 @@ def scrape():
                 return
 
             json_data = response.json()
-            new_data = json_data.get("levelXpCurve", []) if section == "xp-tables" else json_data.get("data", [])
+            new_data = json_data.get("data", [])
 
             if not new_data:
                 print(f"No more data found for `{section}`. Moving to next section...")
                 break
 
             entries = []
+            _slug_entries = ["mobs", "hunting-creatures"]
             for entry in new_data:
+                if section in _slug_entries:
+                    guid = entry.get("_slug")
+                else:
+                    #  This is an ugly workaround. Will have to fix it when everything has a guid or _id
+                    guid = entry.get("guid") or entry.get("_id") or entry.get("displayName")
+
+                entry['guid'] = guid
                 entry['section'] = section
-                guid = entry.get("guid") or generate_numeric_guid(entry)
-                entry["guid"] = guid
 
                 entries.append({
                     "guid": guid,
@@ -172,22 +245,12 @@ def scrape():
             # Insert data into Supabase. This will handle known error codes. Open a ticket if you find another code
             #   that should be handled
             if entries:
-                try:
-                    res = supabase.table("codex").upsert(entries).execute()
-                    if res.data:
-                        print(f"Inserted/Updated {len(res.data)} entries for `{section}` page {page}.")
-                    else:
-                        print(f"No new data inserted for `{section}` on page {page}. Data may already exist.")
-                except postgrest.exceptions.APIError as e:
-                    if e.code == "57014":  # Statement timeout
-                        print(
-                            f"POST to database timed out on page {page} of section `{section}`. Retrying in 5 seconds...")
-                        time.sleep(5)
-                        res = supabase.table("codex").upsert(entries).execute()
-                    if e.code == "23505":  # Duplicate key error
-                        print(f"Duplicate GUID detected in `{section}` on page {page}. Skipping entry.")
-                    else:
-                        print(f"Unexpected API error while up-upsert section `{section}` on page {page}:\n{e}")
+                for entry in entries:
+                    if not entry.get('guid'):
+                        print(f"Missing GUID in entry: {entry}")
+                success = retry_upsert(entries, section, page)
+                if not success:
+                    print(f"Failed to handle entries for section `{section}` page {page}.")
 
             print(f"Inserting page {page}, section `{section}` data in {time.time() - start_time:.2f} seconds.")
             page += 1
@@ -199,17 +262,15 @@ if __name__ == "__main__":
     running = True
     print(config.WELCOME_TEXT)
     while running:
-        option = input("Menu Option: > ")
+        option = input("\nMenu Option: > ")
         match option:
             case "1":
                 input(config.VERIFY_TEXT)
-                print("Running scrape...")
                 scrape()
                 running = False
             case "2":
                 input(config.VERIFY_TEXT)
-                create_table(Client)
-                print("Running create table")
+                create_table()
             case "3":
                 print(config.HELP_TEXT)
             case "4":

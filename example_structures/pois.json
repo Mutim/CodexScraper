@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "_id": "6064631702982098946",
+      "levelDefinitionId": {
+        "guid": "6064629126799097877",
+        "typeId": "9227326",
+        "name": "None"
+      },
+      "playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C38F1F464F885510952152A7554C7D6A\", \"2nd Sword Outpost\")",
+      "worldDiscoveryId": {
+        "guid": "6064632202593501194",
+        "typeId": "5882304",
+        "name": "None"
+      },
+      "overlappingZoisIds": [
+        {
+          "guid": "6064629126905528345",
+          "typeId": "9127326",
+          "name": "None"
+        }
+      ],
+      "mapLocation": {
+        "x": -950349.436098,
+        "y": 610261.215661,
+        "z": 0
+      },
+      "mapIconVisualId": {
+        "guid": "6064630988804194306",
+        "typeId": "949952112329",
+        "name": "None"
+      },
+      "editorColor": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "pOIRewardTables": [],
+      "alignmentsAssignedUponEnteringIds": [],
+      "guid": "6064631702982098946",
+      "name": "2nd Sword Outpost",
+      "typeId": "9128326",
+      "_slug": "2nd-sword-outpost",
+      "description": "Small PoI",
+      "location": {
+        "x": -950349.436098,
+        "y": 610261.215661,
+        "z": 0
+      },
+      "_loot": []
+    }
+  ]
+}

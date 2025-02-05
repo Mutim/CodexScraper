@@ -1,0 +1,1520 @@
+{
+  "data": [
+    {
+      "_displayName": "9th Shield Honorguard",
+      "_slug": "9th-shield-honorguard",
+      "populationInstances": [
+        {
+          "assetSetsIds": [
+            {
+              "guid": "6064630270761767366",
+              "typeId": "5111002",
+              "name": "None"
+            }
+          ],
+          "location": {
+            "x": -5205.07805665606,
+            "y": -10266.8906580689,
+            "z": 2798.83294721997
+          },
+          "respawnTime": "1800 seconds",
+          "lootTablesIds": [
+            {
+              "guid": "0",
+              "typeId": "1091110040",
+              "name": "None"
+            }
+          ],
+          "gameplayTags": {
+            "gameplayTags": [],
+            "parentTags": []
+          },
+          "nPCLevelMin": 8,
+          "nPCLevelMax": 8,
+          "patrolRouteId": {
+            "guid": "0",
+            "typeId": "250007",
+            "name": "None"
+          },
+          "huntingGatheringInteractionId": {
+            "guid": "0",
+            "typeId": "19846",
+            "name": "None"
+          },
+          "guid": "6064632185538412642",
+          "name": "RVR_Aelan_Ruins_Warhelm_Event_Pop_Ashen_Haunt_PI_6064632185538412642",
+          "_assetSet": {
+            "gameplayTags": {
+              "gameplayTags": [
+                {
+                  "tagName": "npc.disposition.enemy"
+                },
+                {
+                  "tagName": "character.undead"
+                }
+              ],
+              "parentTags": [
+                {
+                  "tagName": "npc.disposition"
+                },
+                {
+                  "tagName": "npc"
+                },
+                {
+                  "tagName": "character"
+                }
+              ]
+            },
+            "guid": "6064630270761767366",
+            "name": "Pop_Ashen_Haunt"
+          },
+          "_combinedTags": [
+            "npc.disposition.enemy",
+            "character.undead"
+          ],
+          "_populationAsset": {},
+          "_asset": {
+            "assetRef": "/Game/DesignAssets/Population/NPC/Monster/Undead/Spirit/Wraith/AshenHaunt_Lancer.AshenHaunt_Lancer",
+            "name": "Pop_Ashen_Haunt"
+          },
+          "_noTagsButShouldBeIncluded": true,
+          "_displayName": "9th Shield Honorguard",
+          "_location": {
+            "x": -796521.547725656,
+            "y": 596338.545521931,
+            "z": 23946.03382222
+          }
+        },
+        {
+          "assetSetsIds": [
+            {
+              "guid": "6064630270761767366",
+              "typeId": "5111002",
+              "name": "None"
+            }
+          ],
+          "location": {
+            "x": -4489.8841669868,
+            "y": -10276.8501140177,
+            "z": 2795.46874830199
+          },
+          "respawnTime": "1800 seconds",
+          "lootTablesIds": [
+            {
+              "guid": "0",
+              "typeId": "1091110040",
+              "name": "None"
+            }
+          ],
+          "gameplayTags": {
+            "gameplayTags": [],
+            "parentTags": []
+          },
+          "nPCLevelMin": 8,
+          "nPCLevelMax": 8,
+          "patrolRouteId": {
+            "guid": "0",
+            "typeId": "250007",
+            "name": "None"
+          },
+          "huntingGatheringInteractionId": {
+            "guid": "0",
+            "typeId": "19846",
+            "name": "None"
+          },
+          "guid": "6064632185542803555",
+          "name": "RVR_Aelan_Ruins_Warhelm_Event_Pop_Ashen_Haunt_PI_6064632185542803555",
+          "_assetSet": {
+            "gameplayTags": {
+              "gameplayTags": [
+                {
+                  "tagName": "npc.disposition.enemy"
+                },
+                {
+                  "tagName": "character.undead"
+                }
+              ],
+              "parentTags": [
+                {
+                  "tagName": "npc.disposition"
+                },
+                {
+                  "tagName": "npc"
+                },
+                {
+                  "tagName": "character"
+                }
+              ]
+            },
+            "guid": "6064630270761767366",
+            "name": "Pop_Ashen_Haunt"
+          },
+          "_combinedTags": [
+            "npc.disposition.enemy",
+            "character.undead"
+          ],
+          "_populationAsset": {},
+          "_asset": {
+            "assetRef": "/Game/DesignAssets/Population/NPC/Monster/Undead/Spirit/Wraith/AshenHaunt_Lancer.AshenHaunt_Lancer",
+            "name": "Pop_Ashen_Haunt"
+          },
+          "_noTagsButShouldBeIncluded": true,
+          "_displayName": "9th Shield Honorguard",
+          "_location": {
+            "x": -795806.353835987,
+            "y": 596328.586065982,
+            "z": 23942.669623302
+          }
+        }
+      ],
+      "_levelRange": "8",
+      "_loot": [
+        {
+          "predicate": {
+            "expression": ""
+          },
+          "rewardDefContainers": [
+            {
+              "grantPredicate": {
+                "expression": ""
+              },
+              "selectionAlgorithm": "All",
+              "numberToSelect": 0,
+              "grantMethod": "Auto",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [
+                1
+              ],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [
+                {
+                  "displayName": "NSLOCTEXT(\"\", \"FF14124147F78ED4004F009BC9E820B4\", \"Experience\")",
+                  "currency": {},
+                  "itemRewards": [],
+                  "experienceRewards": [
+                    {
+                      "experienceType": "Adventuring",
+                      "experienceValue": {
+                        "expression": "const level      = float(GetCharacterLevel(GetOwner()));\r\nconst xp         = EvalCurve($#10516612381411114:6064630639394422811$, level);\r\nconst rewardMult = EvalFormula($#10516612381411113:6064632139336385412$);\r\nxp * rewardMult"
+                      },
+                      "experienceContextId": {
+                        "guid": "6064630644204175885",
+                        "typeId": "1091110055",
+                        "name": "None"
+                      },
+                      "professionsId": {
+                        "guid": "0",
+                        "typeId": "8125613373123",
+                        "name": "None"
+                      },
+                      "gatheringResourceTypeId": {
+                        "guid": "0",
+                        "typeId": "1983422155363",
+                        "name": "None"
+                      },
+                      "craftingRecipeDefId": {
+                        "guid": "0",
+                        "typeId": "163697",
+                        "name": "None"
+                      }
+                    },
+                    {
+                      "experienceType": "NodeActivity",
+                      "experienceValue": {
+                        "expression": "EvalFormula($#10516612381411113:6064632140925698058$)"
+                      },
+                      "experienceContextId": {
+                        "guid": "6064630644204175885",
+                        "typeId": "1091110055",
+                        "name": "None"
+                      },
+                      "professionsId": {
+                        "guid": "0",
+                        "typeId": "8125613373123",
+                        "name": "None"
+                      },
+                      "gatheringResourceTypeId": {
+                        "guid": "0",
+                        "typeId": "1983422155363",
+                        "name": "None"
+                      },
+                      "craftingRecipeDefId": {
+                        "guid": "0",
+                        "typeId": "163697",
+                        "name": "None"
+                      }
+                    },
+                    {
+                      "experienceType": "Weapon",
+                      "experienceValue": {
+                        "expression": "const level      = float(GetCharacterLevel(GetOwner()));\r\nconst xp         = EvalCurve($#10516612381411114:6064630639394422811$, level);\r\nconst rewardMult = EvalFormula($#10516612381411113:6064632139336385412$);\r\nxp * rewardMult"
+                      },
+                      "experienceContextId": {
+                        "guid": "6064630644204175885",
+                        "typeId": "1091110055",
+                        "name": "None"
+                      },
+                      "professionsId": {
+                        "guid": "0",
+                        "typeId": "8125613373123",
+                        "name": "None"
+                      },
+                      "gatheringResourceTypeId": {
+                        "guid": "0",
+                        "typeId": "1983422155363",
+                        "name": "None"
+                      },
+                      "craftingRecipeDefId": {
+                        "guid": "0",
+                        "typeId": "163697",
+                        "name": "None"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "const level  = Float(GetCharacterLevel(GetOwner()));\r\nconst lootMax = GetPlayerLootMaxLevel();\r\nconst falloff = EvalCurve($#10516612381411114:6064632237548240902$, Abs(lootMax - level));\r\nconst chance = EvalCurve($#10516612381411114:6064630650862698497$, level);\r\nRandDouble() < chance * falloff"
+              },
+              "selectionAlgorithm": "All",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [
+                {
+                  "displayName": "NSLOCTEXT(\"\", \"6EF1A02F4C55A088E490C2904FEE492F\", \"Glint T1\")",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064628753953390592",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "0",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064628753953390592",
+                          "itemName": "Dull Glint",
+                          "defaultQuality": 1,
+                          "grade": "NG",
+                          "displayIcon": "/Game/UI/Icons/Resource/Glint/TUI_Icon_Resource_Glint_Sola.TUI_Icon_Resource_Glint_Sola",
+                          "name": "Certificate_T1_Glint",
+                          "minRarity": "1",
+                          "maxRarity": "1"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "const level = Float(GetCharacterLevel(GetOwner()));\r\nconst min   = EvalCurve($#10516612381411114:6064630650928758791$, level);\r\nconst max   = EvalCurve($#10516612381411114:6064631031109648384$, level);\r\nconst mult  = EvalFormula($#10516612381411113:6064632139336385412$);\r\nconst roll  = RandDoubleRange(min*mult,max*mult);\r\nconst trunc = int(roll);\r\nconst fract = roll - trunc;\r\ntrunc + int(RandDouble() < fract)"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Certificate_T1_Glint",
+                        "itemName": "LOCTABLE(\"/Game/UI_Kit/Items.Items\", \"Certificate_Glint_T1\")"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                }
+              ],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "const level  = Float(GetCharacterLevel(GetOwner()));\r\nconst lootMax = GetPlayerLootMaxLevel();\r\nconst falloff = EvalCurve($#10516612381411114:6064632237548240902$, Abs(lootMax - level));\r\nconst chance = EvalCurve($#10516612381411114:6064630650864533506$, level);\r\nRandDouble() < chance * falloff"
+              },
+              "selectionAlgorithm": "All",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [
+                {
+                  "displayName": "NSLOCTEXT(\"\", \"44635CB84667FFE113D58181EB4F8E64\", \"Glint T2\")",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064629147780775936",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "0",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064629147780775936",
+                          "itemName": "Dim Glint",
+                          "defaultQuality": 21,
+                          "grade": "NG",
+                          "displayIcon": "/Game/UI/Icons/Resource/Glint/TUI_Icon_Resource_Glint_Bina.TUI_Icon_Resource_Glint_Bina",
+                          "name": "Certificate_T2_Glint",
+                          "minRarity": "2",
+                          "maxRarity": "2"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "const level = Float(GetCharacterLevel(GetOwner()));\r\nconst min   = Round(EvalCurve($#10516612381411114:6064630650931707912$, level));\r\nconst max   = Round(EvalCurve($#10516612381411114:6064631031112663041$, level));\r\nconst mult  = EvalFormula($#10516612381411113:6064632139336385412$);\r\nconst roll  = RandDoubleRange(min*mult,max*mult);\r\nconst trunc = int(roll);\r\nconst fract = roll - trunc;\r\ntrunc + int(RandDouble() < fract)"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Certificate_T2_Glint",
+                        "itemName": "LOCTABLE(\"/Game/UI_Kit/Items.Items\", \"Certificate_Glint_T2\")"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                }
+              ],
+              "rewardContainerIcon": "None"
+            }
+          ],
+          "subTableSelectionAlgorithm": "All",
+          "numberOfSubtablesToSelect": 2,
+          "weightsPerSubTable": [],
+          "percentagePerSubTable": [],
+          "subTablesWeightCurve": {
+            "externalCurve": "None",
+            "editorCurveData": {
+              "keys": [],
+              "defaultValue": 3.4028234663852886e+38,
+              "preInfinityExtrap": "RCCE_Constant",
+              "postInfinityExtrap": "RCCE_Constant",
+              "keyHandlesToIndices": {}
+            }
+          },
+          "subTablesIds": [],
+          "guid": "6064630135340401618",
+          "name": "Base_Kill_Reward_XP+Glint",
+          "typeId": "1091110040"
+        },
+        {
+          "predicate": {
+            "expression": ""
+          },
+          "rewardDefContainers": [
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() <= 7"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 8 && GetNPCLevel() <= 14"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 15 && GetNPCLevel() <= 19"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630657027997924",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "6064630802017615872",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630657027997924",
+                          "itemName": "Ashen Haunt's Breastplate",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Gear/Armor/Heavy/Chest/TUI_Icon_Gear_Armor_Heavy_Chest_AshenHaunt7.TUI_Icon_Gear_Armor_Heavy_Chest_AshenHaunt7",
+                          "name": "Gear_Armor_Heavy_AshenHaunt_Chest",
+                          "minRarity": "3",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Gear_Armor_Heavy_AshenHaunt_Chest",
+                        "itemName": "Ashen Haunt's Breastplate"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630657027997987",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "6064630802017615872",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630657027997987",
+                          "itemName": "Ashen Haunt's Greaves",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Gear/Armor/Heavy/Feet/TUI_Icon_Gear_Armor_Heavy_Feet_AshenHaunt7.TUI_Icon_Gear_Armor_Heavy_Feet_AshenHaunt7",
+                          "name": "Gear_Armor_Heavy_AshenHaunt_Feet",
+                          "minRarity": "3",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Gear_Armor_Heavy_AshenHaunt_Feet",
+                        "itemName": "Ashen Haunt's Greaves"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630657027997945",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "6064630802017615872",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630657027997945",
+                          "itemName": "Ashen Haunt's Bracers",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Gear/Armor/Heavy/Forearms/TUI_Icon_Gear_Armor_Heavy_Forearms_AshenHaunt7.TUI_Icon_Gear_Armor_Heavy_Forearms_AshenHaunt7",
+                          "name": "Gear_Armor_Heavy_AshenHaunt_Forearms",
+                          "minRarity": "3",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Gear_Armor_Heavy_AshenHaunt_Forearms",
+                        "itemName": "Ashen Haunt's Bracers"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630657027932346",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "6064630802017615872",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630657027932346",
+                          "itemName": "Ashen Haunt's Pauldrons",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Gear/Armor/Heavy/Shoulders/TUI_Icon_Gear_Armor_Heavy_Shoulders_AshenHaunt7.TUI_Icon_Gear_Armor_Heavy_Shoulders_AshenHaunt7",
+                          "name": "Gear_Armor_Heavy_AshenHaunt_Shoulders",
+                          "minRarity": "3",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Gear_Armor_Heavy_AshenHaunt_Shoulders",
+                        "itemName": "Ashen Haunt's Pauldrons"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630657027997966",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "6064630802017615872",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630657027997966",
+                          "itemName": "Ashen Haunt's Belt",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Gear/Armor/Heavy/Waist/TUI_Icon_Gear_Armor_Heavy_Waist_AshenHaunt.TUI_Icon_Gear_Armor_Heavy_Waist_AshenHaunt",
+                          "name": "Gear_Armor_Heavy_AshenHaunt_Waist",
+                          "minRarity": "3",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Gear_Armor_Heavy_AshenHaunt_Waist",
+                        "itemName": "Ashen Haunt's Belt"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630657027932367",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "6064630802017615872",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630657027932367",
+                          "itemName": "Ashen Haunt's Cloak",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Gear/Armor/Heavy/Back/TUI_Icon_Gear_Armor_Heavy_Back_AshenHaunt1.TUI_Icon_Gear_Armor_Heavy_Back_AshenHaunt1",
+                          "name": "Gear_Armor_Light_AshenHaunt_Back",
+                          "minRarity": "3",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Gear_Armor_Light_AshenHaunt_Back",
+                        "itemName": "Ashen Haunt's Cloak"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                }
+              ],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 20 && GetNPCLevel() <= 24"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 25 && GetNPCLevel() <= 29"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            }
+          ],
+          "subTableSelectionAlgorithm": "RollEachByPercent",
+          "numberOfSubtablesToSelect": 2,
+          "weightsPerSubTable": [
+            15,
+            10,
+            5,
+            70
+          ],
+          "percentagePerSubTable": [],
+          "subTablesWeightCurve": {
+            "externalCurve": "None",
+            "editorCurveData": {
+              "keys": [],
+              "defaultValue": 3.4028234663852886e+38,
+              "preInfinityExtrap": "RCCE_Constant",
+              "postInfinityExtrap": "RCCE_Constant",
+              "keyHandlesToIndices": {}
+            }
+          },
+          "subTablesIds": [],
+          "guid": "6064632243258655673",
+          "name": "AshenHaunt_Gear_Armor",
+          "typeId": "1091110040"
+        },
+        {
+          "predicate": {
+            "expression": ""
+          },
+          "rewardDefContainers": [],
+          "subTableSelectionAlgorithm": "PerElementWeightedRandom",
+          "numberOfSubtablesToSelect": 2,
+          "weightsPerSubTable": [
+            1
+          ],
+          "percentagePerSubTable": [],
+          "subTablesWeightCurve": {
+            "externalCurve": "None",
+            "editorCurveData": {
+              "keys": [],
+              "defaultValue": 3.4028234663852886e+38,
+              "preInfinityExtrap": "RCCE_Constant",
+              "postInfinityExtrap": "RCCE_Constant",
+              "keyHandlesToIndices": {}
+            }
+          },
+          "subTablesIds": [
+            {
+              "guid": "6064632243258655673",
+              "typeId": "1091110040",
+              "name": "None"
+            }
+          ],
+          "guid": "6064632243248694198",
+          "name": "AshenHaunt_Gear",
+          "typeId": "1091110040"
+        },
+        {
+          "predicate": {
+            "expression": ""
+          },
+          "rewardDefContainers": [
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() <= 7"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 8 && GetNPCLevel() <= 14"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 15 && GetNPCLevel() <= 19"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630673020223501",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "0",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630673020223501",
+                          "itemName": "Recipe: Ashen Haunt's Breastplate",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Consumable/Recipe/TUI_Icon_Consumable_Recipe.TUI_Icon_Consumable_Recipe",
+                          "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Chest",
+                          "minRarity": "1",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Chest",
+                        "itemName": "Recipe: Ashen Haunt's Breastplate"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630673020289038",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "0",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630673020289038",
+                          "itemName": "Recipe: Ashen Haunt's Greaves",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Consumable/Recipe/TUI_Icon_Consumable_Recipe.TUI_Icon_Consumable_Recipe",
+                          "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Feet",
+                          "minRarity": "1",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Feet",
+                        "itemName": "Recipe: Ashen Haunt's Greaves"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630673020289039",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "0",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630673020289039",
+                          "itemName": "Recipe: Ashen Haunt's Bracers",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Consumable/Recipe/TUI_Icon_Consumable_Recipe.TUI_Icon_Consumable_Recipe",
+                          "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Forearms",
+                          "minRarity": "1",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Forearms",
+                        "itemName": "Recipe: Ashen Haunt's Bracers"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630673020354576",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "0",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630673020354576",
+                          "itemName": "Recipe: Ashen Haunt's Pauldrons",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Consumable/Recipe/TUI_Icon_Consumable_Recipe.TUI_Icon_Consumable_Recipe",
+                          "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Shoulders",
+                          "minRarity": "1",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Shoulders",
+                        "itemName": "Recipe: Ashen Haunt's Pauldrons"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630673020354577",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "0",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630673020354577",
+                          "itemName": "Recipe: Ashen Haunt's Belt",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Consumable/Recipe/TUI_Icon_Consumable_Recipe.TUI_Icon_Consumable_Recipe",
+                          "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Waist",
+                          "minRarity": "1",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Consumable_Recipe_Armorsmithing_T2_Armor_AshenHaunt_Waist",
+                        "itemName": "Recipe: Ashen Haunt's Belt"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                },
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630673041457171",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "0",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630673041457171",
+                          "itemName": "Recipe: Ashen Haunt's Cloak",
+                          "defaultQuality": 1,
+                          "grade": "D",
+                          "displayIcon": "/Game/UI/Icons/Items/Consumable/Recipe/TUI_Icon_Consumable_Recipe.TUI_Icon_Consumable_Recipe",
+                          "name": "Consumable_Recipe_Tailoring_T2_Armor_AshenHaunt_Back",
+                          "minRarity": "1",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Consumable_Recipe_Tailoring_T2_Armor_AshenHaunt_Back",
+                        "itemName": "Recipe: Ashen Haunt's Cloak"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                }
+              ],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 20 && GetNPCLevel() <= 24"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 25 && GetNPCLevel() <= 29"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            }
+          ],
+          "subTableSelectionAlgorithm": "None",
+          "numberOfSubtablesToSelect": 2,
+          "weightsPerSubTable": [
+            15,
+            10,
+            5,
+            70
+          ],
+          "percentagePerSubTable": [],
+          "subTablesWeightCurve": {
+            "externalCurve": "None",
+            "editorCurveData": {
+              "keys": [],
+              "defaultValue": 3.4028234663852886e+38,
+              "preInfinityExtrap": "RCCE_Constant",
+              "postInfinityExtrap": "RCCE_Constant",
+              "keyHandlesToIndices": {}
+            }
+          },
+          "subTablesIds": [],
+          "guid": "6064632243258983354",
+          "name": "AshenHaunt_Recipe_Armor",
+          "typeId": "1091110040"
+        },
+        {
+          "predicate": {
+            "expression": ""
+          },
+          "rewardDefContainers": [],
+          "subTableSelectionAlgorithm": "PureRandom",
+          "numberOfSubtablesToSelect": 2,
+          "weightsPerSubTable": [
+            15,
+            10,
+            5,
+            70
+          ],
+          "percentagePerSubTable": [],
+          "subTablesWeightCurve": {
+            "externalCurve": "None",
+            "editorCurveData": {
+              "keys": [],
+              "defaultValue": 3.4028234663852886e+38,
+              "preInfinityExtrap": "RCCE_Constant",
+              "postInfinityExtrap": "RCCE_Constant",
+              "keyHandlesToIndices": {}
+            }
+          },
+          "subTablesIds": [
+            {
+              "guid": "6064632243258983354",
+              "typeId": "1091110040",
+              "name": "None"
+            }
+          ],
+          "guid": "6064632243248759735",
+          "name": "AshenHaunt_Recipe",
+          "typeId": "1091110040"
+        },
+        {
+          "predicate": {
+            "expression": ""
+          },
+          "rewardDefContainers": [
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() <= 7"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 8 && GetNPCLevel() <= 14"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 15 && GetNPCLevel() <= 19"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [
+                1
+              ],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [
+                {
+                  "displayName": "",
+                  "currency": {},
+                  "itemRewards": [
+                    {
+                      "item": {
+                        "itemId": {
+                          "guid": "6064630673006002188",
+                          "typeId": "1091110003",
+                          "name": "None"
+                        },
+                        "variationId": {
+                          "guid": "0",
+                          "typeId": "1091111111",
+                          "name": "None"
+                        },
+                        "item": {
+                          "guid": "6064630673006002188",
+                          "itemName": "Ashen Essence",
+                          "defaultQuality": 1,
+                          "grade": "NG",
+                          "displayIcon": "/Game/UI/Icons/Resource/Raw/TUI_Icon_Resource_Raw_Emblem_AshenEssence.TUI_Icon_Resource_Raw_Emblem_AshenEssence",
+                          "name": "Resource_Raw_Emblem_AshenEssence",
+                          "minRarity": "1",
+                          "maxRarity": "6"
+                        }
+                      },
+                      "quantity": {
+                        "expression": "1"
+                      },
+                      "bPrioritizeQuality": false,
+                      "_item": {
+                        "name": "Resource_Raw_Emblem_AshenEssence",
+                        "itemName": "Ashen Essence"
+                      }
+                    }
+                  ],
+                  "experienceRewards": []
+                }
+              ],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 20 && GetNPCLevel() <= 24"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            },
+            {
+              "grantPredicate": {
+                "expression": "GetNPCLevel() >= 25 && GetNPCLevel() <= 29"
+              },
+              "selectionAlgorithm": "PerElementWeightedRandom",
+              "numberToSelect": 0,
+              "grantMethod": "Always",
+              "rewardsWeightCurve": {
+                "externalCurve": "None",
+                "editorCurveData": {
+                  "keys": [],
+                  "defaultValue": 3.4028234663852886e+38,
+                  "preInfinityExtrap": "RCCE_Constant",
+                  "postInfinityExtrap": "RCCE_Constant",
+                  "keyHandlesToIndices": {}
+                }
+              },
+              "weightsPerReward": [],
+              "percentageDropRatePerReward": [],
+              "maxSelectorChoices": 0,
+              "rewards": [],
+              "rewardContainerIcon": "None"
+            }
+          ],
+          "subTableSelectionAlgorithm": "None",
+          "numberOfSubtablesToSelect": 2,
+          "weightsPerSubTable": [
+            15,
+            10,
+            5,
+            70
+          ],
+          "percentagePerSubTable": [],
+          "subTablesWeightCurve": {
+            "externalCurve": "None",
+            "editorCurveData": {
+              "keys": [],
+              "defaultValue": 3.4028234663852886e+38,
+              "preInfinityExtrap": "RCCE_Constant",
+              "postInfinityExtrap": "RCCE_Constant",
+              "keyHandlesToIndices": {}
+            }
+          },
+          "subTablesIds": [],
+          "guid": "6064632243248890808",
+          "name": "AshenHaunt_Misc",
+          "typeId": "1091110040"
+        },
+        {
+          "predicate": {
+            "expression": ""
+          },
+          "rewardDefContainers": [],
+          "subTableSelectionAlgorithm": "RollEachByPercent",
+          "numberOfSubtablesToSelect": 2,
+          "weightsPerSubTable": [
+            15,
+            10,
+            5,
+            70
+          ],
+          "percentagePerSubTable": [
+            {
+              "expression": "const levelDiff = GetPlayerLootMaxLevel() - Float(GetCharacterLevel(GetOwner()));\r\n\r\nEvalFormula($#10516612381411113:6064632242666341269$) * EvalCurve($#10516612381411114:6064632214182757247$, GetPlayerLootAvgLuck()) * EvalCurve($#10516612381411114:6064632237548240902$, Abs(levelDiff))"
+            },
+            {
+              "expression": "const levelDiff = GetPlayerLootMaxLevel() - Float(GetCharacterLevel(GetOwner()));\r\n\r\nEvalFormula($#10516612381411113:6064632242666406806$) * EvalCurve($#10516612381411114:6064632214182757247$, GetPlayerLootAvgLuck()) * EvalCurve($#10516612381411114:6064632237548240902$, Abs(levelDiff))"
+            },
+            {
+              "expression": "const levelDiff = GetPlayerLootMaxLevel() - Float(GetCharacterLevel(GetOwner()));\r\n\r\nEvalFormula($#10516612381411113:6064632243242533812$) * EvalCurve($#10516612381411114:6064632214182757247$, GetPlayerLootAvgLuck()) * EvalCurve($#10516612381411114:6064632237548240902$, Abs(levelDiff))"
+            }
+          ],
+          "subTablesWeightCurve": {
+            "externalCurve": "None",
+            "editorCurveData": {
+              "keys": [],
+              "defaultValue": 3.4028234663852886e+38,
+              "preInfinityExtrap": "RCCE_Constant",
+              "postInfinityExtrap": "RCCE_Constant",
+              "keyHandlesToIndices": {}
+            }
+          },
+          "subTablesIds": [
+            {
+              "guid": "6064632243248694198",
+              "typeId": "1091110040",
+              "name": "None"
+            },
+            {
+              "guid": "6064632243248759735",
+              "typeId": "1091110040",
+              "name": "None"
+            },
+            {
+              "guid": "6064632243248890808",
+              "typeId": "1091110040",
+              "name": "None"
+            }
+          ],
+          "guid": "6064630673045651476",
+          "name": "AshenHaunt_Base",
+          "typeId": "1091110040"
+        }
+      ]
+    }
+  ]
+}

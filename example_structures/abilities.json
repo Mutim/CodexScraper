@@ -1,0 +1,529 @@
+{
+  "data": [
+    {
+      "abilityTags": [
+        {
+          "tagName": "ability.Archetype"
+        }
+      ],
+      "abilityIcon": "/Game/UI/Icons/Archetypes/Tank/Abilities/TUI_IconTank_AbsorptionField.TUI_IconTank_AbsorptionField",
+      "abilityConditionalIcons": [],
+      "bOverrideRangeInTooltip": false,
+      "customTooltipRange": {
+        "expression": ""
+      },
+      "bOverrideProgressBarClass": false,
+      "progressBarClass": "None",
+      "progressBarSortScore": {
+        "expression": ""
+      },
+      "hasProc": {
+        "expression": ""
+      },
+      "hasAbilitySynergy": {
+        "expression": ""
+      },
+      "hasStatusEffectSynergy": {
+        "expression": ""
+      },
+      "animMontages": [
+        {
+          "abilityDirection": "NONE",
+          "animExpression": {
+            "expression": ""
+          },
+          "startSectionName": "Default",
+          "bOverrideSequenceResetTime": false,
+          "sequenceResetTime": 0,
+          "abilityAnimationSoftPaths": [
+            "/Game/Characters/Animations/00_ABLT/Tank/CM_M_ABLT_TNK_AbsorptionField_Montage.CM_M_ABLT_TNK_AbsorptionField_Montage"
+          ],
+          "targetingKey": 0,
+          "hitKeys": []
+        }
+      ],
+      "activationRequirements": {
+        "expression": ""
+      },
+      "weaponRequirement": "NoRequirement",
+      "bDisableDuringCooldown": false,
+      "cooldown": {
+        "expression": "90"
+      },
+      "sharedCooldownTag": "None",
+      "cooldownCharges": {
+        "expression": ""
+      },
+      "bOverrideInitialCooldownCharges": false,
+      "initialCooldownChargesOverride": {
+        "expression": ""
+      },
+      "bPersistCooldown": false,
+      "suppressCooldownInUI": {
+        "expression": ""
+      },
+      "bDeferAbilityTrigger": false,
+      "bMayNotBeUsedSimultaneously": false,
+      "bStopsAutoAttack": false,
+      "costs": [
+        {
+          "enabled": {
+            "expression": ""
+          },
+          "statCosts": [
+            {
+              "stat": {
+                "guid": "109183576135288",
+                "typeId": "10516612381411111",
+                "name": "None"
+              },
+              "value": {
+                "expression": "50 * EvalFormula($#10516612381411113:6064631874856222777$)"
+              }
+            }
+          ],
+          "effectCosts": [],
+          "chargeCost": {
+            "expression": "1"
+          },
+          "bTriggersCooldown": true
+        }
+      ],
+      "hitsIds": {
+        "2": {
+          "guid": "6064629507687534559",
+          "typeId": "30316005",
+          "name": "None"
+        },
+        "3": {
+          "guid": "6064629522855758878",
+          "typeId": "30316005",
+          "name": "None"
+        },
+        "4": {
+          "guid": "6064629574602850884",
+          "typeId": "30316005",
+          "name": "None"
+        },
+        "5": {
+          "guid": "6064630683867021368",
+          "typeId": "30316005",
+          "name": "None"
+        }
+      },
+      "effectsIds": {
+        "1": {
+          "guid": "6064629522861853727",
+          "typeId": "30316002",
+          "name": "None"
+        },
+        "2": {
+          "guid": "6064629574598787651",
+          "typeId": "30316002",
+          "name": "None"
+        }
+      },
+      "projectilesIds": {
+        "4": {
+          "guid": "6064629507635299312",
+          "typeId": "30316006",
+          "name": "None"
+        }
+      },
+      "lingeringEffectsIds": {
+        "2": {
+          "guid": "6064629507684847422",
+          "typeId": "30316007",
+          "name": "None"
+        }
+      },
+      "abilityFXIds": {
+        "5": {
+          "guid": "6064629507378056416",
+          "typeId": "30316008",
+          "name": "None"
+        },
+        "6": {
+          "guid": "6064629507695595633",
+          "typeId": "30316008",
+          "name": "None"
+        },
+        "7": {
+          "guid": "6064630645129807241",
+          "typeId": "30316008",
+          "name": "None"
+        },
+        "8": {
+          "guid": "0",
+          "typeId": "30316008",
+          "name": "None"
+        },
+        "9": {
+          "guid": "6064630683870625849",
+          "typeId": "30316008",
+          "name": "None"
+        }
+      },
+      "animBranchesIds": {},
+      "conditionalBranchesIds": {},
+      "reactionsIds": {},
+      "targetingRecordsIds": {
+        "1": {
+          "guid": "6064629522875550753",
+          "typeId": "30316011",
+          "name": "None"
+        },
+        "2": {
+          "guid": "6064629522925491647",
+          "typeId": "30316011",
+          "name": "None"
+        }
+      },
+      "progressDisruptionRecordsIds": {},
+      "comboInputs": [],
+      "bExactInput": false,
+      "bufferPriority": 0,
+      "bUsableFromHotbar": true,
+      "abilityActivationInput": "Single",
+      "bMayEscCancel": true,
+      "bIsAOEClickedAbility": true,
+      "targetActivationRequirement": "Never",
+      "applicableTargets": 0,
+      "applicableTypes": 0,
+      "applicableLifeStates": 1,
+      "applicableCasterLifeStates": 1,
+      "bNeverCancelAbility": false,
+      "bUseTargetingRecord": false,
+      "targetingRecordId": {
+        "guid": "0",
+        "typeId": "30316011",
+        "name": "None"
+      },
+      "bCheckTargetValidity": true,
+      "bPerformLoSCheck": true,
+      "bPerformConeCheck": true,
+      "angleCenter": 0,
+      "distanceCenter": 0,
+      "validAngle": 180,
+      "validDistance": 3000,
+      "angleCenterExp": {
+        "expression": "0.0"
+      },
+      "distanceCenterExp": {
+        "expression": "0.0"
+      },
+      "validAngleExp": {
+        "expression": "180.0"
+      },
+      "validDistanceExp": {
+        "expression": "3000.0"
+      },
+      "speedMultiplierSource": "SPEED_AttackSpeed",
+      "bHoldAnimation": false,
+      "maximumHoldTime": 0,
+      "bMayCancelHoldAtAnyTime": true,
+      "cancelHoldSections": [],
+      "onCancelHoldBranchKey": 0,
+      "bOverrideHeldBehavior": false,
+      "heldAbilityBehavior": "Naive",
+      "bForceAnimCancel": false,
+      "bAllowRotation": true,
+      "pitchMode": "None",
+      "minPitch": 0,
+      "maxPitch": 0,
+      "bUsableInAir": true,
+      "bUsableWhileSwimming": true,
+      "bOmnidirectional": false,
+      "bOrientWithInterpOnStart": false,
+      "onStartInterpConstRate": 0,
+      "bOrientWithInterpOnEnd": false,
+      "onEndInterpConstRate": 0,
+      "bQuickCancelFromAllAbilities": false,
+      "quickCancelFromAbilitiesIds": [],
+      "cancelSectionName": "None",
+      "bRequiresAnimCancel": false,
+      "cancelFromAbilitiesIds": [],
+      "cancelFromTagQuery": {
+        "tokenStreamVersion": 0,
+        "tagDictionary": [],
+        "queryTokenStream": [],
+        "userDescription": "",
+        "autoDescription": ""
+      },
+      "scriptOnActivate": "None",
+      "areaTemplateFXId": {
+        "guid": "6064629462569911314",
+        "typeId": "30316008",
+        "name": "None"
+      },
+      "areaTemplateMaterial": "None",
+      "areaTemplateRotationRate": 3,
+      "areaTargetRadius": 1000,
+      "areaTargetRange": 3000,
+      "bShouldFaceClickedTarget": false,
+      "bPerformIsWalkableCheck": true,
+      "bResetSequenceAfterTime": false,
+      "sequenceResetTime": 0,
+      "bForceComboBreak": true,
+      "abilityName": "Absorption Field",
+      "abilityDescription": "Throw a rallying banner to the target location that spawns an Absorption Field upon impact.<br><br>You and allies that enter the Absorption Field are granted temporary health equal to 15% of your maximum health. This can only be applied to any specific target once per 10 seconds.",
+      "bAllowMovement": true,
+      "bPROTOTYPERotateRootMotion": false,
+      "rootMotionFreezeBehavior": "StopOnContact",
+      "rootMotionFreezeDistance": 0,
+      "rootMotionFreezeRadiusScale": 1,
+      "rootMotionIgnoreNonTarget": false,
+      "bVisualizeSweepCollision": false,
+      "canBreakEffects": {
+        "expression": ""
+      },
+      "effectsToBreak": {
+        "gameplayTags": [],
+        "parentTags": []
+      },
+      "actionModeAbilityId": {
+        "guid": "0",
+        "typeId": "30316001",
+        "name": "None"
+      },
+      "aBTestingAbilitiesIds": [],
+      "animCancelsIds": {},
+      "modifyCooldownsIds": {},
+      "aLSAbilityId": {
+        "guid": "0",
+        "typeId": "30316001",
+        "name": "None"
+      },
+      "inputTerms": [],
+      "dynamicCastDuration": {
+        "expression": ""
+      },
+      "bNeverCull": false,
+      "networkingMaxSpeed": 0,
+      "guid": "6064629500341846016",
+      "name": "Tank_AbsorptionField",
+      "typeId": "30316001",
+      "skillTreeName": "NSLOCTEXT(\"\", \"B040F87B407B4E628713278430AAD91C\", \"Tank\")"
+    },
+    {
+      "effectCategory": "EFFECT_Hidden",
+      "effectTags": [],
+      "effectName": "Abundant Soothing Glow",
+      "effectDescription": "Soothing Glow has an additional charge.\r\n\r\nCasting Soothing Glow on a target already under its effect extends its duration on that target by its base duration.",
+      "effectIcon": "/Game/UI/Icons/Archetypes/Cleric/Abilities/TUI_AbilityIcon_SoothingGlow.TUI_AbilityIcon_SoothingGlow",
+      "effectFloatingText": "",
+      "bDispellable": false,
+      "bSignificant": false,
+      "scriptOnApply": "None",
+      "scriptOnExpire": "None",
+      "bSetUnkillable": false,
+      "bGrantsPVPOptInProtection": false,
+      "effectFXId": {
+        "guid": "0",
+        "typeId": "30316008",
+        "name": "None"
+      },
+      "applicationRequirements": {
+        "expression": ""
+      },
+      "bOverrideDefaultResistRate": false,
+      "resistRate": {
+        "expression": ""
+      },
+      "bInfiniteDuration": true,
+      "effectDuration": {
+        "expression": ""
+      },
+      "bNumStacksLostOnDurationElapse": false,
+      "numStacksLostOnDurationElapse": {
+        "expression": ""
+      },
+      "bPersistsThroughDeath": true,
+      "bPersistsRelog": false,
+      "effectGroupId": {
+        "guid": "0",
+        "typeId": "30316004",
+        "name": "None"
+      },
+      "effectStackType": "STACK_OverrideAlways",
+      "bCompareSourceWhenStacking": true,
+      "collateStacksInUI": false,
+      "globalStackLimit": 50,
+      "inPlaceStackLimit": {
+        "expression": ""
+      },
+      "stackDurationRefresh": "STACK_AlwaysRefresh",
+      "extensionAmount": {
+        "expression": ""
+      },
+      "extendedMaximum": 50,
+      "scriptOnMaxStacks": "None",
+      "bLimitStacksFromInstigator": false,
+      "instigatorStackLimit": {
+        "expression": ""
+      },
+      "tickTimer": 0,
+      "bIgnoreInitialTick": false,
+      "scriptOnTick": "None",
+      "bRecalculateHitOnTick": false,
+      "preApplyHitsIds": [],
+      "applyHitsIds": [],
+      "tickHitsIds": [],
+      "consumeHitsIds": [],
+      "removeHitsIds": [],
+      "expireHitsIds": [],
+      "endHitsIds": [],
+      "statModsIds": [],
+      "spawnNPCsIds": [],
+      "spawnLingeringZonesIds": [],
+      "redirectsIds": [],
+      "reactionsIds": [],
+      "crowdControlId": {
+        "guid": "0",
+        "typeId": "3031600206",
+        "name": "None"
+      },
+      "resistancesIds": [],
+      "fragilityDefinitionsIds": [],
+      "hitModsIds": [],
+      "addAlignmentsIds": [],
+      "removeAlignmentsIds": [],
+      "bApplyScale": false,
+      "scaleAmount": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scaleTime": 0,
+      "statusVFX": "None",
+      "supressClickTargeting": {
+        "expression": ""
+      },
+      "supressTabAndSoftTargeting": {
+        "expression": ""
+      },
+      "supressNameplate": {
+        "expression": ""
+      },
+      "bSlowFall": false,
+      "bNeverCull": false,
+      "addedAkEvents": [],
+      "removedAkEvents": [],
+      "akSwitchValues": [],
+      "guid": "6064630599273283669",
+      "name": "Cleric_Passive_SoothingGlow_Abundant",
+      "typeId": "30316002",
+      "skillTreeName": "NSLOCTEXT(\"\", \"513DF7034D305D0A7B2F30BFDE64CCAE\", \"Cleric\")"
+    },
+    {
+      "effectCategory": "EFFECT_Hidden",
+      "effectTags": [],
+      "effectName": "Accelerative Blink",
+      "effectDescription": "After casting Blink, your next Fireball, Frostbolt, or Lightning Strike cast within 3 seconds casts instantly.",
+      "effectIcon": "/Game/UI/Icons/Archetypes/Mage/TUI_AbilityIcon_Blink.TUI_AbilityIcon_Blink",
+      "effectFloatingText": "",
+      "bDispellable": false,
+      "bSignificant": false,
+      "scriptOnApply": "None",
+      "scriptOnExpire": "None",
+      "bSetUnkillable": false,
+      "bGrantsPVPOptInProtection": false,
+      "effectFXId": {
+        "guid": "0",
+        "typeId": "30316008",
+        "name": "None"
+      },
+      "applicationRequirements": {
+        "expression": ""
+      },
+      "bOverrideDefaultResistRate": false,
+      "resistRate": {
+        "expression": ""
+      },
+      "bInfiniteDuration": false,
+      "effectDuration": {
+        "expression": "0"
+      },
+      "bNumStacksLostOnDurationElapse": false,
+      "numStacksLostOnDurationElapse": {
+        "expression": ""
+      },
+      "bPersistsThroughDeath": false,
+      "bPersistsRelog": false,
+      "effectGroupId": {
+        "guid": "0",
+        "typeId": "30316004",
+        "name": "None"
+      },
+      "effectStackType": "STACK_OverrideAlways",
+      "bCompareSourceWhenStacking": true,
+      "collateStacksInUI": false,
+      "globalStackLimit": 50,
+      "inPlaceStackLimit": {
+        "expression": ""
+      },
+      "stackDurationRefresh": "STACK_AlwaysRefresh",
+      "extensionAmount": {
+        "expression": ""
+      },
+      "extendedMaximum": 50,
+      "scriptOnMaxStacks": "None",
+      "bLimitStacksFromInstigator": false,
+      "instigatorStackLimit": {
+        "expression": ""
+      },
+      "tickTimer": 0,
+      "bIgnoreInitialTick": false,
+      "scriptOnTick": "None",
+      "bRecalculateHitOnTick": false,
+      "preApplyHitsIds": [],
+      "applyHitsIds": [],
+      "tickHitsIds": [],
+      "consumeHitsIds": [],
+      "removeHitsIds": [],
+      "expireHitsIds": [],
+      "endHitsIds": [],
+      "statModsIds": [],
+      "spawnNPCsIds": [],
+      "spawnLingeringZonesIds": [],
+      "redirectsIds": [],
+      "reactionsIds": [],
+      "crowdControlId": {
+        "guid": "0",
+        "typeId": "3031600206",
+        "name": "None"
+      },
+      "resistancesIds": [],
+      "fragilityDefinitionsIds": [],
+      "hitModsIds": [],
+      "addAlignmentsIds": [],
+      "removeAlignmentsIds": [],
+      "bApplyScale": false,
+      "scaleAmount": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scaleTime": 0,
+      "statusVFX": "None",
+      "supressClickTargeting": {
+        "expression": ""
+      },
+      "supressTabAndSoftTargeting": {
+        "expression": ""
+      },
+      "supressNameplate": {
+        "expression": ""
+      },
+      "bSlowFall": false,
+      "bNeverCull": false,
+      "addedAkEvents": [],
+      "removedAkEvents": [],
+      "akSwitchValues": [],
+      "guid": "6064631985782390897",
+      "name": "Mage_Passive_Blink_Accelerative",
+      "typeId": "30316002",
+      "skillTreeName": "NSLOCTEXT(\"\", \"38420CF243434A6B04786C9C3D9E9606\", \"Mage\")"
+    }
+  ]
+}
