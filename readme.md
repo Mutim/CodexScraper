@@ -14,25 +14,31 @@ CodexScraper is a tool used to access the data from [AshesCodex](https://ashesco
    - Open CMD <kbd>Win</kbd> + <kbd>r</kbd>
    - Type `cmd`
    - `cd Desktop` (Or wherever you want to save this to)
+
    ```sh
    git clone https://github.com/mutim/CodexScraper.git
    cd CodexScraper
 
 2. **Install dependencies**
     - While still in terminal, `cd CodexScraper`
+
     ```sh
    pip install -r requirements.txt
 
 3. **Running the Program**
     - You will need to run the program for the first time to set-up the `.env` file.
+
     ```sh
     python main.py
 - - This is your first time, so it will exit with the message:
+
     ```sh
     "No valid .env file found! Creating one now... Please modify this to reflect your data."
+
 - This is what we want. After you get this message, navigate to the directory where you saved the script.
 - You should see a new file in here, called `.env`. You can use any text editor to edit this file.
-    ```json
+
+    ```python
     SUPABASE_URL = 'Replace Me! (Keep quotes to escape special characters)'
     SUPABASE_KEY = 'Replace Me! (Keep quotes to escape special characters)'
     
@@ -46,7 +52,8 @@ CodexScraper is a tool used to access the data from [AshesCodex](https://ashesco
     DBNAME = 'postgres'
 We'll fill this out in the next section ^^
 ## 📚 Database
-1. **Setup a Supabase Account**
+**Setup a Supabase Account**
+
 - Navigate to [Supabase](https://supabase.com/) and create an account.
 - On your dashboard, create a `New Project` (note the password in your `.env` file)
 - Go to `Project Settings` on the left panel and `Data API`
