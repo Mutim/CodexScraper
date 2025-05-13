@@ -26,7 +26,7 @@ CodexScraper is a tool used to access the data from [AshesCodex](https://ashesco
    pip install -r requirements.txt
 
 3. **Running the Program**
-    - You will need to run the program for the first time to set-up the `.env` file.
+    - You will need to run the program for the first time to set up the `.env` file.
 
     ```sh
     python main.py
@@ -37,19 +37,21 @@ CodexScraper is a tool used to access the data from [AshesCodex](https://ashesco
 
 - This is what we want. After you get this message, navigate to the directory where you saved the script.
 - You should see a new file in here, called `.env`. You can use any text editor to edit this file.
+> **📝 Note:** As of Version 1.1, you can edit this in program
+[ConfigExample.mp4](..%2F..%2FConfigExample.mp4)
 
-    ```python
-    SUPABASE_URL = 'Replace Me! (Keep quotes to escape special characters)'
-    SUPABASE_KEY = 'Replace Me! (Keep quotes to escape special characters)'
+    SUPABASE_URL='Replace Me! (Keep quotes to escape special characters)'
+    SUPABASE_KEY='Replace Me! (Keep quotes to escape special characters)'
     
-    ASHES_AUTH = 'Make this blank if you are not using it'
-    ASHES_KEY = ''
+    ASHES_AUTH='Make this blank if you are not using it'
+    ASHES_KEY=''
     
-    USER = 'postgres.{your_database}'
-    PASSWORD = ''
-    HOST = ''
-    PORT = '6543'
-    DBNAME = 'postgres'
+    USER='postgres.{your_database}'
+    PASSWORD=''
+    HOST=''
+    PORT='6543'
+    DBNAME='postgres'
+
 We'll fill this out in the next section ^^
 ## 📚 Database
 **Setup a Supabase Account**
