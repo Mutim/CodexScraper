@@ -40,242 +40,203 @@ Run the script, and it will automatically process all the sections and store the
 that you have updated your .env file.
 
 """
-
-
-import hashlib
-import time
 import os
 import sys
 
-import requests
 from dotenv import load_dotenv
-from supabase import create_client, Client
-import postgrest
-import psycopg2
+import colorama
 
-import config
+from tools import program_tools, table_tools, terminal_tools
+from tools.program_tools import Info
+config = program_tools.load_config(program_tools.CONFIG_FILE)
 
-
+# If no .env file, we create one.
 if not os.path.isfile(".env"):
     with open(".env", "w") as f:
         f.write(config.ENV_CONTENT)
     sys.exit("No valid .env file found! Creating one now... Please modify this to reflect your data.")
-# Load the .env
-load_dotenv()
 
-# Supabase credentials -
-# Found at https://supabase.com/dashboard/project/{your-database-url}/settings/api
-SUPABASE_URL = os.getenv("SUPABASE_URL")  # URL For you supabase database
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")  # Supabase API key
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+load_dotenv(override=True)
+Info.refresh()
 
-# Ashes information -
-# This info is not needed, and can safely be left blank in your .env file.
-# However, it is apparently needed when pulling user specific information from the site, such as custom markers.
-ASHES_AUTH = os.getenv("ASHES_AUTH")  # 'Bearer token'
-ASHES_KEY = os.getenv("ASHES_KEY")  # The API key that you send when you send a request to codex
-
-# Database Information -
-# Found at https://supabase.com/dashboard/project/{your-database-url}/editor?showConnect=true
-USER = os.getenv("USER")
-PASSWORD = os.getenv("PASSWORD")
-HOST = os.getenv("HOST")
-PORT = os.getenv("PORT")
-DBNAME = os.getenv("DBNAME")
+# Validate info is correctly loaded after loading vars
+try:
+    Info.validate()
+except ValueError as e:
+    sys.exit(f"Configuration error while validating system variables: {e}")
 
 
-def create_table():
-    print("Attempting connection...")
-    try:
-        with psycopg2.connect(
-            user=USER,
-            password=PASSWORD,
-            host=HOST,
-            port=PORT,
-            dbname=DBNAME
-        ) as connection:
-            print("Connection successful!")
-            with connection.cursor() as cursor:
-                with open('sql/schemas.sql', 'r') as sql_file:
-                    schemas = sql_file.read().strip()
-                    schema_sections = schemas.split('-- ###BREAK')
-                    table_create = schema_sections[1]
+def configure_sections():
+    configuring = True
+    section_list = list(config["TEXTS"]["SECTION_TEXT"].items())  # List of (section, section_name) pairs
+    while configuring:
+        terminal_tools.clear()
+        print(config["TEXTS"]["BANNER"])
 
-                if not table_create:
-                    print("Error: SQL Query is empty!")
-                    return
+        for i, (section, section_name) in enumerate(section_list):
+            is_in_sections = '✔' if section in config["SECTIONS"] else ' '
+            print(f"\033[0;36m[{i + 1}]\033[0m {section_name}: {' ' * (25 - len(section_name))}[{is_in_sections} ]")
 
-                cursor.execute(table_create)
-                connection.commit()
-                print("Table Successfully Created!")
+        print(f"\n\033[0;36m[0]\033[0m Return")
 
-    except psycopg2.Error as e:
-        print(f"Database error: {e}")
-
-
-def retry_upsert(entries, section, page):
-    max_retries = 5
-    retry_count = 0
-    backoff = 2
-
-    while retry_count < max_retries:
+        toggle_section = input(f"\nMenu Option: > ")
+        if toggle_section == "0":
+            configuring = False
         try:
-            res = supabase.table("codex").upsert(entries).execute()
+            section_index = int(toggle_section) - 1
+            if 0 <= section_index < len(section_list):
+                section = section_list[section_index][0]
 
-            if res.data:
-
-                print(f"Created or Updated | {len(res.data)} "
-                      f"total entries for \033[0;32m`{section}`\033[0m page {page}.")
-            else:
-                print(f"No new data inserted for `{section}` on page {page}. Data may already exist.")
-
-            return True
-
-        except postgrest.exceptions.APIError as e:
-            error_code = str(getattr(e, "code", "N/A"))
-            if error_code == "57014":  # Statement timeout
-                print(
-                    f"\033[0;33mError 57014: POST to database timed out on page {page} of section `{section}`.\033[0m"
-                    f"Retrying in {backoff} seconds...")
-                time.sleep(backoff)
-                retry_count += 1
-                backoff *= 2
-            elif error_code == "23505":  # Duplicate key error
-                print(f"\033[0;33mError 23505: Duplicate GUID detected in `{section}` on page {page}. Skipping entry.\033[0m")
-                return False
-            elif error_code == "520":  # JSON could not be generated
-                print(
-                    f"\033[0;33mError 520: JSON object could not be generated for `{section}` on page {page}.\033[0m"
-                    f"Object is too large...")
-                return False
-            elif error_code == "21000":  # ON CONFLICT DO UPDATE affecting row twice
-                print(f"\033[0;33mError 21000: ON CONFLICT DO UPDATE command cannot affect row a second time. Skipping entry.\033[0m")
-                return False
-            elif error_code == "23502":  # ON CONFLICT DO UPDATE affecting row twice
-                print(f"\033[0;33mError 23502: Missing GUID in entry. Skipping entry.\033[0m")
-                return False
-            else:
-                print(f"\033[0;33mUnexpected API error while upsert section `{section}` on page {page}:\033[0m\n{e}")
-                cont = input(f"\nPlease report: {e.code} as message: {e.hint}. "
-                             f"Type 'exit' to quit, or press ENTER to continue.\n > ")
-                if not cont.lower() == "exit":
-                    return False
-                sys.exit(f"\033[0;33mDB has been force closed with errors.\033[0m")
-        if retry_count >= max_retries:
-            print(f"Max retries reached for page {page} of section `{section}`. Skipping.")
-            return False
-
-    return False
-
-
-def scrape():
-    # Removed xp-tables. The data is all over the place, and has no structure. Lists, lists of objects, objects of list.
-    sections = ["items", "mobs", "abilities", "hunting-creatures", "npcs", "pois", "status-effects"]
-
-    params = {
-        "select": "data",
-        "id": "",
-        "limit": 1
-    }
-
-    headers = {
-        "apikey": ASHES_KEY,
-        "Authorization": ASHES_AUTH,
-        "Accept": "application/json",
-    }
-
-    for section in sections:
-
-        page = 1
-
-        print(f"---------- Starting Section `{section}` on page {page}. ----------")
-
-        while True:
-            timeouts = 0
-            start_time = time.time()
-            url = f"https://api.ashescodex.com/{section}?page={page}"
-
-            while timeouts <= 5:
-                try:
-                    response = requests.get(url, headers=headers, params=params, timeout=30)
-
-                    if response.status_code == 429:
-                        retry_after = int(response.headers.get("Retry-After", 60))
-                        print(f"Rate-limited. Retrying after {retry_after} seconds...")
-                        time.sleep(retry_after)
-                        continue
-                    break
-                except requests.exceptions.Timeout:
-                    timeouts += 1
-                    print(f"Request timed out on page {page} of section `{section}`. Retrying in 5 seconds...")
-                    time.sleep(5)
-            else:
-                print(f"Failed after 5 timeouts on page {page} of section `{section}`. Skipping...")
-                continue
-
-            if response.status_code != 200:
-                print(f"Error fetching section `{section}`: HTTP {response.status_code}")
-                return
-
-            json_data = response.json()
-            new_data = json_data.get("data", [])
-
-            if not new_data:
-                print(f"No more data found for `{section}`. Moving to next section...")
-                break
-
-            entries = []
-            _slug_entries = ["mobs", "hunting-creatures"]
-            for entry in new_data:
-                if section in _slug_entries:
-                    guid = entry.get("_slug")
+                if section in config["SECTIONS"]:
+                    config["SECTIONS"].remove(section)
                 else:
-                    #  This is an ugly workaround. Will have to fix it when everything has a guid or _id
-                    guid = entry.get("guid") or entry.get("_id") or entry.get("displayName")
+                    config["SECTIONS"].append(section)
 
-                entry['guid'] = guid
-                entry['section'] = section
-
-                entries.append({
-                    "guid": guid,
-                    "section": section,
-                    "data": entry
-                })
-
-            # Insert data into Supabase. This will handle known error codes. Open a ticket if you find another code
-            #   that should be handled
-            if entries:
-                for entry in entries:
-                    if not entry.get('guid'):
-                        print(f"Missing GUID in entry: {entry}")
-                success = retry_upsert(entries, section, page)
-                if not success:
-                    print(f"Failed to handle entries for section `{section}` page {page}.")
-
-            print(f"Inserting page {page}, section `{section}` data in {time.time() - start_time:.2f} seconds.")
-            page += 1
-            time.sleep(0.25)
-    print("Data Grabbing Complete!  --  Exiting program...")
+                program_tools.update_config(config)
+            else:
+                if section_index != -1:  # Checking if selection is 0, everything else will fail
+                    input(f"\033[0;31mInvalid option. Press ENTER to continue.\033[0m")
+        except (ValueError, IndexError):
+            print("\033[0;31mInvalid option, please try again.\033[0m")
 
 
+def configure_database():
+    configuring = True
+    env_vars = {
+        "HOST": "Database Host",
+        "PORT": "Database Port (default: 5432)",
+        "USER": "Database Username",
+        "PASSWORD": "Database Password",
+        "SUPABASE_URL": "Supabase Project URL",
+        "SUPABASE_KEY": "Supabase API Key"
+    }
+
+    initial_values = {var: os.getenv(var, "") for var in env_vars.keys()}
+    current_values = initial_values.copy()
+    has_changes = False
+
+    while configuring:
+        terminal_tools.clear()
+        print(config["TEXTS"]["BANNER"])
+
+        for i, (var, desc) in enumerate(env_vars.items(), 1):
+            value = current_values[var]
+            display_value = ("*" * 12) if var == "PASSWORD" and value else f"{value[:15]}..." if len(value) > 18 else value
+            print(f"\033[0;36m[{i}]\033[0m {desc:40} \033[0;33m{display_value or '<not set>'}\033[0m")
+
+        color_code = program_tools.COLOR_CODES["GREEN"] if has_changes else program_tools.COLOR_CODES["RESET"]
+        print(f"\n\033[0;36m[s]\033[0m {color_code}Save configuration\033[0m")
+        print(f"\033[0;36m[0]\033[0m Return without saving")
+
+        choice = input(f"\nMenu Option: > ")
+        if choice == "0":
+            if has_changes:
+                confirm = input("\033[0;33mDiscard changes? (y/n): \033[0m")
+                if confirm.lower() != 'y':
+                    continue
+            return False
+        elif choice == "s":
+            if not has_changes:
+                input("\033[0;36mNo changes to save. Press ENTER to continue.\033[0m")
+                continue
+            with open(".env", "w") as f:
+                for var, value in current_values.items():
+                    if value:
+                        f.write(f"{var}='{value}'\n")
+            print("\033[0;32mConfiguration saved to .env file!\033[0m")
+            input("Press ENTER to continue...")
+            return True
+        elif choice.isdigit() and 1 <= int(choice) <= len(env_vars):
+            selected_var = list(env_vars.keys())[int(choice) - 1]
+            new_val = input(f"\nEnter new value for {env_vars[selected_var]}: ").strip()
+
+            if new_val:
+                current_values[selected_var] = new_val
+                has_changes = current_values != initial_values
+            if new_val.lower() == "none":
+                return True
+            current_values[selected_var] = new_val
+        else:
+            input(f"\033[0;31mInvalid option. Press ENTER to continue.\033[0m")
+
+
+def configure_method():
+    configuring = True
+    options = ["DB", "JSON"]
+    while configuring:
+        terminal_tools.clear()
+        print(config["TEXTS"]["BANNER"])
+
+        for i, option in enumerate(options):
+            is_in_sections = '✔' if option in config["SCRAPE_METHOD"] else ' '
+            print(f"\033[0;36m[{i + 1}]\033[0m {option}: {' ' * (25 - len(option))}[{is_in_sections} ]")
+
+        print(f"\n\033[0;36m[0]\033[0m Return")
+
+        choice = input(f"\nMenu Option: > ")
+        if choice == "0":
+            configuring = False
+        elif choice in ("1", "2"):
+            selected_method = options[int(choice) - 1]
+            if config["SCRAPE_METHOD"] != selected_method:
+                config["SCRAPE_METHOD"] = selected_method
+                program_tools.update_config(config)
+        else:
+            input(f"\033[0;31mInvalid option. Press ENTER to continue.\033[0m")
+
+
+def configure():
+    configuring = True
+    while configuring:
+        terminal_tools.clear()
+        print(config["TEXTS"]["BANNER"])
+        print(config["TEXTS"]["CONFIGURATION_TEXT"])
+        opt = input("\nMenu Option: > ")
+        match opt:
+            case "1":  # Sections
+                configure_sections()
+            case "2":  # Configure Database
+                configure_database()
+            case "3":  # Scrape Method
+                configure_method()
+            case "0":  # Exit
+                configuring = False
+            case _:
+                print("Invalid Option")
+
+
+# TODO: Set this to run in it's own thread so we can listen for keystrokes and stop the program cleanly.
 if __name__ == "__main__":
+    # Colorama will set up systems to accept colorful terminals
+    colorama.init()
     running = True
-    print(config.WELCOME_TEXT)
     while running:
+        terminal_tools.clear()
+        print(config["TEXTS"]["BANNER"])
+        print(config["TEXTS"]["WELCOME_TEXT"])
         option = input("\nMenu Option: > ")
+        scrape_meth = config["SCRAPE_METHOD"]
         match option:
-            case "1":
-                input(config.VERIFY_TEXT)
-                scrape()
-                running = False
-            case "2":
-                input(config.VERIFY_TEXT)
-                create_table()
-            case "3":
-                print(config.HELP_TEXT)
-            case "4":
+            case "1":  # Scrape
+                input(config["TEXTS"]["VERIFY_TEXT"])
+                if config["SCRAPE_METHOD"] == "DB":
+                    table_tools.scrape()
+                elif config["SCRAPE_METHOD"] == "JSON":
+                    table_tools.scrape_to_json()
+                else:
+                    input(f"\033[0;31mInvalid Configuration Option. Expected DB or JSON, "
+                          f"received {scrape_meth} Press ENTER to configure.\033[0m")
+                    configure()
+            case "2":  # Initialize Database
+                input(config["TEXTS"]["VERIFY_TEXT"])
+                configured = table_tools.create_table()
+                input(f"Database was {'not ' if not configured else ''}properly configured!")
+            case "3":  # Config
+                configure()
+            case "4":  # Help
+                input(config["TEXTS"]["HELP_TEXT"])
+            case "0":  # Exit
                 print("Exiting program...")
                 running = False
-                quit()
             case _:
                 print("Invalid option, please try again.")

@@ -1,0 +1,27 @@
+{
+    "VERSION": 1.1,
+    "SECTION_DICT": {},
+    "SECTIONS": [
+        "items"
+    ],
+    "TEXTS": {
+        "BANNER": " \u2588\u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2557  \u2588\u2588\u2557\n\u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d\u2588\u2588\u2554\u2550\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d\u255a\u2588\u2588\u2557\u2588\u2588\u2554\u255d\n\u2588\u2588\u2551     \u2588\u2588\u2551   \u2588\u2588\u2551\u2588\u2588\u2551  \u2588\u2588\u2551\u2588\u2588\u2588\u2588\u2588\u2557   \u255a\u2588\u2588\u2588\u2554\u255d \n\u2588\u2588\u2551     \u2588\u2588\u2551   \u2588\u2588\u2551\u2588\u2588\u2551  \u2588\u2588\u2551\u2588\u2588\u2554\u2550\u2550\u255d   \u2588\u2588\u2554\u2588\u2588\u2557 \n\u255a\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u255a\u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d\u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2554\u255d \u2588\u2588\u2557\n \u255a\u2550\u2550\u2550\u2550\u2550\u255d \u255a\u2550\u2550\u2550\u2550\u2550\u255d \u255a\u2550\u2550\u2550\u2550\u2550\u255d \u255a\u2550\u2550\u2550\u2550\u2550\u2550\u255d\u255a\u2550\u255d  \u255a\u2550\u255d\n\nAshes Codex data grabber. v1.0\n\u001b[0;32m-------------------------------------------------------\u001b[0m\n",
+        "WELCOME_TEXT": "\u001b[0;36m[1]\u001b[0m Scrape                  - Extract data from sources\n\u001b[0;36m[2]\u001b[0m Initialize Database     - Set up the storage system\n\u001b[0;36m[3]\u001b[0m Config                  - Configure program options\n\u001b[0;36m[4]\u001b[0m Help                    - Get usage instructions\n\n\u001b[0;36m[0]\u001b[0m Exit                    - Quit the application",
+        "HELP_TEXT": "If you require any assistance or there is an issue with the script, please open an issue on github, or do a PR.\nYou can also message me directly on discord @Mutim#0001",
+        "VERIFY_TEXT": "Verify that all information is correct in your .env file, then press ENTER\nIf you need to configure your file, please CTRL+C now!\n\u001b[0;33mIf you ctrl-C while running, you run the risk of losing all data.\u001b[0m",
+        "CONFIGURATION_TEXT": "\u001b[0;36m[1]\u001b[0m Sections                - Configure scrape sections\n\u001b[0;36m[2]\u001b[0m Database                - Edit DB Variables\n\u001b[0;36m[3]\u001b[0m Method                  - Save to DB or JSON\n\n\u001b[0;36m[0]\u001b[0m Back                    - Go back to Main Menu",
+        "SECTIONS": "",
+        "METHOD_TEXT": "",
+        "SECTION_TEXT": {
+            "items": "Items",
+            "mobs": "Mobs",
+            "abilities": "Abilities",
+            "hunting-creatures": "Hunting Creatures",
+            "npcs": "NPC's",
+            "pois": "POI's",
+            "status-effects": "Status Effects"
+        }
+    },
+    "ENV_CONTENT": "SUPABASE_URL = 'Replace Me! (Keep quotes to escape special characters)'\nSUPABASE_KEY = 'Replace Me! (Keep quotes to escape special characters)'\n\nASHES_AUTH = 'Make this blank if you are not using it'\nASHES_KEY = ''\n\nUSER = 'postgres.{your_database}'\nPASSWORD = ''\nHOST = ''\nPORT = '6543'\nDBNAME = 'postgres'\n",
+    "SCRAPE_METHOD": "JSON"
+}
