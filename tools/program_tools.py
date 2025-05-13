@@ -121,7 +121,8 @@ class InfoManager:
         ]
         missing = [name for name, value in required if not value]
         if missing:
-            raise ValueError(f"Missing required config: {', '.join(missing)}")
+            input(f"{COLOR_CODES['YELLOW']}Missing required config for database. Please configure: {', '.join(missing)}"
+                  f"\n{COLOR_CODES['RESET']}Press ENTER to continue...")
 
 
 # Instance teh dataclass

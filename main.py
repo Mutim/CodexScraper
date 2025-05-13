@@ -54,7 +54,7 @@ config = program_tools.load_config(program_tools.CONFIG_FILE)
 if not os.path.isfile(".env"):
     with open(".env", "w") as f:
         f.write(config["ENV_CONTENT"])
-    sys.exit("No valid .env file found! Creating one now... Please modify this to reflect your data.")
+    sys.exit("No valid .env file found! Creating one now... Please restart the program.")
 
 load_dotenv(override=True)
 Info.refresh()
