@@ -53,7 +53,7 @@ config = program_tools.load_config(program_tools.CONFIG_FILE)
 # If no .env file, we create one.
 if not os.path.isfile(".env"):
     with open(".env", "w") as f:
-        f.write(config.ENV_CONTENT)
+        f.write(config["ENV_CONTENT"])
     sys.exit("No valid .env file found! Creating one now... Please modify this to reflect your data.")
 
 load_dotenv(override=True)
